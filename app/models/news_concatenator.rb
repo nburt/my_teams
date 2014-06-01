@@ -36,12 +36,14 @@ class NewsConcatenator
   private
 
   def create_news_hash(articles)
-    articles.map do |article|
-      {
-        :headline => article["headline"],
-        :url => article["links"]["web"]["href"],
-        :last_modified => "#{Time.parse(article["lastModified"])}",
-      }
+    if articles != nil
+      articles.map do |article|
+        {
+          :headline => article["headline"],
+          :url => article["links"]["web"]["href"],
+          :last_modified => "#{Time.parse(article["lastModified"])}",
+        }
+      end
     end
   end
 
