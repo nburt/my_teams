@@ -11,11 +11,19 @@
     </article>
   <% end %>
 <% else %>
-  <%= form_for @user, :url => {:controller => "registrations", :action => "create"} do |f| %>
-    <%= f.label :email %>
-    <%= f.email_field :email %>
-    <%= f.label :password %>
-    <%= f.password_field :password %>
-    <%= f.submit "Register" %>
+  <div class="form_container">
+    <h1>Register</h1>
+    <% if @user.errors.present? %>
+      <% @user.errors.full_messages.each do |message| %>
+        <p><%= message %></p>
+      <% end %>
     <% end %>
+    <%= form_for @user, :url => {:controller => "registrations", :action => "create"} do |f| %>
+      <%= f.label :email, :autofocus => true %>
+      <%= f.email_field :email %>
+      <%= f.label :password %>
+      <%= f.password_field :password %>
+      <%= f.submit "Register" %>
+    <% end %>
+  </div>
 <% end %>

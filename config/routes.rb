@@ -3,5 +3,5 @@ Rails.application.routes.draw do
   post '/users', to: 'registrations#create'
   get '/destroy', to: 'sessions#destroy'
   get '/login', to: 'sessions#new'
-  post '/users', to: 'sessions#create'
+  post '/login', to: 'sessions#create'
 end

@@ -1,12 +1,13 @@
 /* variables */
 
 $main_orange: #FF9A53;
+$main_blue: #CDECFF;
 
 
 /* universal */
 
 body {
-  background-color: #CDECFF;
+  background-color: $main_blue;
 }
 
 /* header and navbar */
@@ -27,12 +28,16 @@ nav {
     list-style: none;
     margin-left: 12.7em;
   }
+  a {
+    color: white;
+    text-decoration: none;
+  }
   li {
     display: inline-block;
     float: right;
     margin-right: 12.7em;
     &:last-child {
-      margin-top: .75em;
+      margin-top: .8em;
     }
   }
   #site_name {
@@ -71,6 +76,49 @@ article {
     text-decoration: none;
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+/* forms */
+
+.form_container {
+  background-color: $main_orange;
+  padding: 1em;
+  border-radius: 5px;
+  h1 {
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    margin-bottom: .5em;
+  }
+  p {
+    text-align: center;
+    color: white;
+    margin-bottom: .5em;
+  }
+}
+
+form {
+  label {
+    display: block;
+    color: white;
+  }
+  input {
+    display: block;
+    width: 15em;
+    margin-bottom: 1em;
+    &:last-child {
+      width: 6em;
+      background-color: white;
+      color: $main_orange;
+      border: 1px solid white;
+      border-radius: 3px;
+      &:hover {
+        background-color: $main_blue;
+        color: white;
+        border: 1px solid $main_blue;
+      }
     }
   }
 }

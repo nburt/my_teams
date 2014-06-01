@@ -14,7 +14,6 @@ feature 'visiting the homepage' do
 
   scenario 'a user can login' do
     VCR.use_cassette('features/login') do
-      visit '/'
       click_link 'Logout'
       click_link 'Login'
       fill_in 'user[email]', :with => 'nate@example.com'
@@ -24,9 +23,19 @@ feature 'visiting the homepage' do
     end
   end
 
+  scenario 'a user cannot login with incorrect credentials' do
+    VCR.use_cassette('features/incorrect_login') do
+      click_link 'Logout'
+      click_link 'Login'
+      fill_in 'user[email]', :with => 'nate@example.com'
+      fill_in 'user[password]', :with => 'password1'
+      click_button 'Login'
+      expect(page).to have_content 'Invalid email or password'
+    end
+  end
+
   scenario 'displays mariners headlines on homepage' do
     VCR.use_cassette('features/mariners_news') do
-      visit '/'
       expect(page).to have_content 'Martinez, Cabrera lead Detroit past Seattle 6-3'
       expect(page).to have_link 'Read on ESPN'
     end

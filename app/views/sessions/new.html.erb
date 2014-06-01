@@ -1,7 +1,11 @@
-<%= form_for @user, :url => {:controller => "sessions", :action => "create"} do |f| %>
-  <%= f.label :email %>
-  <%= f.email_field :email %>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
-  <%= f.submit "Login" %>
-<% end %>
+<div class="form_container">
+  <h1>Login</h1>
+  <p><%= flash[:login_failure] %></p>
+  <%= form_for @user, :url => {:controller => "sessions", :action => "create"} do |f| %>
+    <%= f.label :email %>
+    <%= f.email_field :email, :autofocus => true %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.submit "Login" %>
+  <% end %>
+</div>

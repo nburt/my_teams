@@ -10,7 +10,7 @@
 <header>
   <nav>
     <ul>
-      <li id="site_name">My Teams</li>
+      <li id="site_name"><%= link_to "My Teams", root_path %></li>
       <% if current_user %>
         <li>Welcome, <%= current_user.email %></li>
         <li><%= link_to "Logout", "/destroy" %></li>
