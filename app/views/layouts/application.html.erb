@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>MyTeams</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
@@ -13,12 +13,15 @@
       <li id="site_name">My Teams</li>
       <% if current_user %>
         <li>Welcome, <%= current_user.email %></li>
+        <li><%= link_to "Logout", "/destroy" %></li>
+      <% else %>
+        <li><%= link_to "Login", "/login" %></li>
       <% end %>
     </ul>
   </nav>
 </header>
 <main>
-<%= yield %>
+  <%= yield %>
 </main>
 </body>
 </html>

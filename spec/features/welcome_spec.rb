@@ -12,6 +12,18 @@ feature 'visiting the homepage' do
     end
   end
 
+  scenario 'a user can login' do
+    VCR.use_cassette('features/login') do
+      visit '/'
+      click_link 'Logout'
+      click_link 'Login'
+      fill_in 'user[email]', :with => 'nate@example.com'
+      fill_in 'user[password]', :with => 'password'
+      click_button 'Login'
+      expect(page).to have_content 'Welcome, nate@example.com'
+    end
+  end
+
   scenario 'displays mariners headlines on homepage' do
     VCR.use_cassette('features/mariners_news') do
       visit '/'
