@@ -34,14 +34,7 @@ feature 'visiting the homepage' do
     end
   end
 
-  scenario 'displays chargers headlines on homepage' do
-    pending
-    VCR.use_cassette('features/chargers_news') do
-      expect(page).to have_content 'Shawne Merriman joins WWE'
-    end
-  end
-
-  scenario 'a user can select the baseball team that they want to join' do
+  scenario 'a user can select the baseball team(s) that they want to add' do
     VCR.use_cassette('features/baseball_select') do
       within 'header' do
         click_link 'Add Teams'
@@ -56,7 +49,7 @@ feature 'visiting the homepage' do
     end
   end
 
-  scenario 'a user can select the basketball team that they want to join' do
+  scenario 'a user can select the basketball team(s) that they want to add' do
     VCR.use_cassette('features/basketball_select') do
       within 'header' do
         click_link 'Add Teams'
@@ -68,6 +61,21 @@ feature 'visiting the homepage' do
       click_button 'Add Teams'
       expect(page).to have_content 'Clips sale pending board approval'
       expect(page).to have_content 'Phil talks Melo, search for coach'
+    end
+  end
+
+  scenario 'a user can select the football team(s) that they want to add' do
+    VCR.use_cassette('features/football_select') do
+      within 'header' do
+        click_link 'Add Teams'
+      end
+      within '#football_container' do
+        check 'football[24]'
+        check 'football[12]'
+      end
+      click_button 'Add Teams'
+      expect(page).to have_content 'Shawne Merriman joins WWE'
+      expect(page).to have_content 'Alex Smith holds all the cards'
     end
   end
 

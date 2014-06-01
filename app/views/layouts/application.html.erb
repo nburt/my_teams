@@ -13,8 +13,8 @@
       <li id="site_name"><%= link_to "My Teams", root_path %></li>
       <div id="right_side_nav">
         <% if current_user %>
-          <li><%= link_to "Add Teams", "/teams/new" %></li>
           <li><%= link_to "Logout", "/destroy" %></li>
+          <li><%= link_to "Add Teams", "/teams/new" %></li>
           <li>Welcome, <%= current_user.email %></li>
         <% else %>
           <li><%= link_to "Login", "/login" %></li>

@@ -36,10 +36,22 @@ class EspnApi
     responses
   end
 
-  def chargers
-    response = Faraday.get("http://api.espn.com/v1/sports/football/nfl/teams/24/news?apikey=#{ENV['ESPN_API_KEY']}")
-    parsed_response_body = parse_json(response.body)
-    parsed_response_body["headlines"]
+  def football(ids)
+    responses = []
+    if have_ids?(ids)
+      if ids.class == Fixnum
+        response = Faraday.get("http://api.espn.com/v1/sports/football/nfl/teams/#{ids}/news?apikey=#{ENV['ESPN_API_KEY']}")
+        parsed_response_body = parse_json(response.body)
+        parsed_response_body["headlines"]
+      else
+        ids.split(", ").each do |id|
+          response = Faraday.get("http://api.espn.com/v1/sports/football/nfl/teams/#{id}/news?apikey=#{ENV['ESPN_API_KEY']}")
+          parsed_response_body = parse_json(response.body)
+          responses << parsed_response_body["headlines"]
+        end
+      end
+    end
+    responses
   end
 
   private
