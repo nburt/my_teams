@@ -1,0 +1,987 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.espn.com/v1/sports/basketball/nba/teams/12/news?apikey=<ESPN_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-01.mashery.com
+      Server:
+      - Sun GlassFish Enterprise Server v2.1
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - ESPN API
+      Cache-Control:
+      - max-age=300
+      Date:
+      - Sun, 01 Jun 2014 17:39:59 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '40193'
+    body:
+      encoding: UTF-8
+      string: '{"timestamp" :"2014-06-01T17:39:59Z","resultsOffset" :0,"status" :"success","resultsLimit"
+        :10,"resultsCount" :451,"headlines" :[{"headline" :"Clips sale pending board
+        approval","keywords" :["donald sterling","nba","adam silver","steve ballmer","clips","shelly
+        sterling"],"lastModified" :"2014-05-31T06:33:42Z","premium" :false,"mobileStory"
+        :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11008952"}},"web"
+        :{"href" :"http://espn.go.com/los-angeles/nba/story/_/id/11008952/nba-approves-steve-ballmer-bid-buy-los-angeles-clippers?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11008952&ex_cid=espnapi_public"}},"shortLinkText"
+        :"NBA approves Ballmer''s bid to buy Clippers ","type" :"HeadlineNews","related"
+        :[],"id" :11008952,"story" :"","title" :"NBA approves Steve Ballmer''s bid
+        to buy Los Angeles Clippers","linkText" :"NBA approves Ballmer''s bid to buy
+        Clippers","source" :"ESPN.com news services","description" :"The NBA has approved
+        former Microsoft CEO Steve Ballmer''s bid to buy the Los Angeles Clippers,
+        according to a statement issued Friday evening by the league. ","images" :[{"height"
+        :324,"alt" :"","width" :576,"name" :"NBA Approves Clippers Sale, Pending Approval","caption"
+        :"Darren Rovell discusses the NBA approving Steve Ballmer''s $2 billion bid
+        to buy the Los Angeles Clippers, pending approval from the league''s owners.","type"
+        :"video","url" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_rovell_clippers_wil_besold/dm_140530_nba_rovell_clippers_wil_besold.jpg"},{"height"
+        :324,"alt" :"Steve Ballmer","width" :576,"name" :"Ballmer_Steve 140529 [576x324]","type"
+        :"inline","credit" :"Noel Vasquez/Getty Images","url" :"http://a.espncdn.com/photo/2014/0529/nba_g_bellm11_cr_576x324.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Los Angeles Clippers","type" :"team","sportId"
+        :46,"teamId" :12,"team" :{"id" :12,"description" :"Los Angeles Clippers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:12"}],"published" :"2014-05-30T22:56:58Z","video" :[{"id" :11009138,"title"
+        :"NBA Approves Clippers Sale, Pending Approval","thumbnail" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_rovell_clippers_wil_besold/dm_140530_nba_rovell_clippers_wil_besold.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"News","trackingName"
+        :"!!UNPUB 6/2!!COM_NBA News (NBA Approves Clippers Sale, Pending Approval)
+        2014/05/30 ESHEET"},"description" :"Darren Rovell discusses the NBA approving
+        Steve Ballmer''s $2 billion bid to buy the Los Angeles Clippers, pending approval
+        from the league''s owners.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=11009138&ex_cid=espnapi_public"}}}]},{"headline"
+        :"Donald Sterling files $1B lawsuit","keywords" :["Donald Sterling","Shelly
+        Sterling","Steve Ballmer","Microsoft","Clips","$1 billion","lawsuit","suit","Max
+        Blecher","Alzheimer''s","incapacitated"],"lastModified" :"2014-05-31T03:07:20Z","premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11008282"}},"web"
+        :{"href" :"http://espn.go.com/los-angeles/nba/story/_/id/11008282/attorney-says-los-angeles-clippers-owner-donald-sterling-suing-nba-1-billion?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11008282&ex_cid=espnapi_public"}},"shortLinkText"
+        :"D. Sterling files $1B suit against NBA ","type" :"HeadlineNews","related"
+        :[{"id" :11010109,"title" :"Donald Sterling''s lawsuit against NBA has no
+        chance to succeed in court","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11010109"}},"web"
+        :{"href" :"http://espn.go.com/espn/otl/story/_/id/11010109/donald-sterling-lawsuit-nba-no-chance-succeed-court?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/wireless/story?storyId=11010109&ex_cid=espnapi_public"}}}],"id"
+        :11008282,"story" :"","title" :"Attorney says Los Angeles Clippers owner Donald
+        Sterling is suing NBA for $1 billion","linkText" :"D. Sterling files $1 billion
+        lawsuit against NBA","source" :"ESPN.com news services","description" :"Donald
+        Sterling is filing a $1 billion lawsuit against the NBA, his lawyer confirmed
+        to ESPN.com''s Ramona Shelburne on Friday, one day after his wife, Shelly,
+        accepted a $2 billion bid from former Microsoft CEO Steve Ballmer to buy the
+        Clippers.","images" :[{"height" :324,"alt" :"","width" :576,"name" :"Donald
+        Sterling Suing NBA","caption" :"Ramona Shelburne discusses the lawsuit Donald
+        Sterling is filing against the NBA for $1 billion.","type" :"video","url"
+        :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_sterling_news_suing_nba/dm_140530_nba_sterling_news_suing_nba.jpg"},{"height"
+        :324,"alt" :"Donald Sterling","width" :576,"name" :"Sterling_Donald  140512
+        [576x324]","type" :"inline","credit" :"Robyn Beck/AFP/Getty Images","url"
+        :"http://a.espncdn.com/photo/2014/0512/espnw_g_sterling_d1_576x324.jpg"}],"categories"
+        :[{"description" :"Los Angeles Clippers","type" :"team","sportId" :46,"teamId"
+        :12,"team" :{"id" :12,"description" :"Los Angeles Clippers","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:12"},{"description" :"NBA","type" :"league","sportId" :46,"leagueId"
+        :46,"league" :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/basketball/nba"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid" :"s:40~l:46"}],"published"
+        :"2014-05-30T21:31:40Z","video" :[{"id" :11008868,"title" :"Donald Sterling
+        Suing NBA","thumbnail" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_sterling_news_suing_nba/dm_140530_nba_sterling_news_suing_nba.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"News","trackingName"
+        :"!!UNPUB 6/2!!COM_NBA News (Donald Sterling Suing NBA) 2014/05/30 ESHEET"},"description"
+        :"Ramona Shelburne discusses the lawsuit Donald Sterling is filing against
+        the NBA for $1 billion.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=11008868&ex_cid=espnapi_public"}}}]},{"headline"
+        :"Cavs talk job with Alvin Gentry","keywords" :["Cavs","Dan Gilbert","David
+        griffin","tryonn lue","Lionel Hollins"],"lastModified" :"2014-05-30T21:50:47Z","premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11008145"}},"web"
+        :{"href" :"http://espn.go.com/nba/story/_/id/11008145/cleveland-cavaliers-interview-alvin-gentry-speak-lionel-hollins?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11008145&ex_cid=espnapi_public"}},"type"
+        :"HeadlineNews","related" :[],"id" :11008145,"story" :"","title" :"Cleveland
+        Cavaliers interview Alvin Gentry, to speak with Lionel Hollins ","linkText"
+        :"Cavaliers interview Gentry; Hollins up next ","source" :"Associated Press","description"
+        :"The Cavaliers'' coaching search is progressing -- and aging.","images" :[{"height"
+        :324,"alt" :"Alvin Gentry","width" :576,"name" :"Gentry_Alvin 140530 [576x324]","type"
+        :"inline","credit" :"Mark J. Rebilas/USA TODAY Sports","url" :"http://a.espncdn.com/photo/2014/0530/nba_u_alvin-gentry_mb_576x324.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Cleveland Cavaliers","type" :"team","sportId"
+        :46,"teamId" :5,"team" :{"id" :5,"description" :"Cleveland Cavaliers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/5"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/cle/cleveland-cavaliers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=5&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:5"},{"description" :"Los Angeles Clippers","type" :"team","sportId"
+        :46,"teamId" :12,"team" :{"id" :12,"description" :"Los Angeles Clippers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:12"},{"description" :"Alvin Gentry","type" :"athlete","sportId"
+        :46,"athleteId" :1499,"athlete" :{"id" :1499,"description" :"Alvin Gentry","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/1499"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/1499/alvin-gentry?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=1499&ex_cid=espnapi_public"}}}}}],"published"
+        :"2014-05-30T21:15:59Z","video" :[]},{"headline" :"The value of racism","keywords"
+        :["Donald Sterling","sale","Clippers","Clips","billion"],"lastModified" :"2014-05-31T02:44:03Z","premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11007465"}},"web"
+        :{"href" :"http://espn.go.com/nba/story/_/id/11007465/scoop-clippers-sale-price-shows-value-racism?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11007465&ex_cid=espnapi_public"}},"type"
+        :"Columnist","related" :[{"id" :11006068,"title" :"Los Angeles Clippers name
+        should exit with Donald Sterling","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11006068"}},"web"
+        :{"href" :"http://espn.go.com/los-angeles/nba/story/_/id/11006068/los-angeles-clippers-name-exit-donald-sterling?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/wireless/story?storyId=11006068&ex_cid=espnapi_public"}}},{"id"
+        :11005367,"title" :"The Los Angeles Clippers'' sale could begin a new era
+        - NBA","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11005367"}},"web"
+        :{"href" :"http://insider.espn.go.com/nba/story/_/id/11005367/the-los-angeles-clippers-sale-begin-new-era-nba?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11005367&ex_cid=espnapi_public"}}},{"id"
+        :11005941,"title" :"Los Angeles Clippers will improve on the court, and in
+        the front office - NBA","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11005941"}},"web"
+        :{"href" :"http://insider.espn.go.com/nba/story/_/id/11005941/los-angeles-clippers-improve-court-front-office-nba?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11005941&ex_cid=espnapi_public"}}},{"id"
+        :11003237,"title" :"Former Microsoft executive Steve Ballmer submits winning
+        bid to buy Clippers, according to sources","links" :{"api" :{"news" :{"href"
+        :"http://api.espn.com/v1/sports/news/11003237"}},"web" :{"href" :"http://espn.go.com/los-angeles/nba/story/_/id/11003237/former-microsoft-executive-steve-ballmer-submits-winning-bid-buy-clippers-according-sources?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11003237&ex_cid=espnapi_public"}}},{"id"
+        :11005433,"title" :"Jalen Rose, NBA","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11005433"}},"web"
+        :{"href" :"http://espn.go.com/espnradio/play?id=11005433&ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/wireless/story?storyId=11005433&ex_cid=espnapi_public"}}}],"id"
+        :11007465,"story" :"","title" :"Scoop - Clippers sale price shows the value
+        of racism","linkText" :"Scoop: Clippers sale shows the value of racism","byline"
+        :"Scoop Jackson","source" :"ESPN.com","description" :"The Sterling family
+        will have an extra billion dollars to spend as a result of Donald Sterling''s
+        racist remarks. Where''s the justice, Scoop Jackson asks. ","images" :[{"height"
+        :300,"alt" :"Shelly Sterling","width" :300,"name" :"Sterling_Donald Sterling_Shelly
+        140507 [300x300]","type" :"inline","credit" :"Getty Images","url" :"http://a.espncdn.com/photo/2014/0507/nba_g_ster_cr_300x300.jpg"},{"height"
+        :300,"alt" :"Donald Sterling","width" :300,"name" :"Sterling_Donald 140515
+        - Index [300x300]","type" :"inline","credit" :"AP Photo/Mark J. Terrill","url"
+        :"http://a.espncdn.com/photo/2014/0515/espnw_a_sterling1x_300x300.jpg"},{"height"
+        :324,"alt" :"","width" :576,"name" :"Breaking Down The Clippers Sale","caption"
+        :"Darren Rovell discusses former Microsoft CEO Steve Ballmer signing an agreement
+        to buy the Clippers for $2 billion.","type" :"video","url" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_rovell_clippers_sale/dm_140530_nba_rovell_clippers_sale.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Los Angeles Clippers","type" :"team","sportId"
+        :46,"teamId" :12,"team" :{"id" :12,"description" :"Los Angeles Clippers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:12"}],"published" :"2014-05-30T19:32:00Z","video" :[{"id" :11005423,"title"
+        :"Breaking Down The Clippers Sale","thumbnail" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_rovell_clippers_sale/dm_140530_nba_rovell_clippers_sale.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"News","trackingName"
+        :"*UNPUB 6/2 10AM COM_NBA News (Rovell On Clippers Sale Latetst) 2014/05/30"},"description"
+        :"Darren Rovell discusses former Microsoft CEO Steve Ballmer signing an agreement
+        to buy the Clippers for $2 billion.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=11005423&ex_cid=espnapi_public"}}}]},{"headline"
+        :"Clippers name has to go with Sterling","keywords" :["Donald Sterling","logo","name
+        change"],"lastModified" :"2014-05-31T00:52:57Z","premium" :false,"mobileStory"
+        :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11006068"}},"web"
+        :{"href" :"http://espn.go.com/los-angeles/nba/story/_/id/11006068/los-angeles-clippers-name-exit-donald-sterling?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/wireless/story?storyId=11006068&ex_cid=espnapi_public"}},"type"
+        :"Columnist","related" :[],"id" :11006068,"story" :"","title" :"Los Angeles
+        Clippers name should exit with Donald Sterling","linkText" :"Clippers name
+        should exit with Sterling","byline" :"Arash Markazi","source" :"ESPNLosAngeles.com","description"
+        :"The Clippers name should follow Donald Sterling out the door.","images"
+        :[{"height" :300,"alt" :"Chris Paul","width" :300,"name" :"Paul_Chris 140530
+        [300x300]","caption" :"The Clippers'' talented core, which includes Chris
+        Paul, has nothing to do with the franchise''s tainted past.","type" :"inline","credit"
+        :"Andrew D. Bernstein/NBAE/Getty Images","url" :"http://a.espncdn.com/photo/2014/0530/la_g_paul_d2_300x300.jpg"},{"height"
+        :200,"alt" :"Donald Sterling","width" :300,"name" :"Sterling_Donald 140515
+        - Index [300x200]","caption" :"The Clippers logo should follow Donald Sterling
+        out the door as a new era is ushered in for Los Angeles'' other NBA franchise.","type"
+        :"inline","credit" :"AP Photo/Mark J. Terrill","url" :"http://a.espncdn.com/photo/2014/0515/espnw_a_sterling1x_300x200.jpg"},{"height"
+        :324,"alt" :"","width" :576,"name" :"Breaking Down The Clippers Sale","caption"
+        :"Darren Rovell discusses former Microsoft CEO Steve Ballmer signing an agreement
+        to buy the Clippers for $2 billion.","type" :"video","url" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_rovell_clippers_sale/dm_140530_nba_rovell_clippers_sale.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Los Angeles Clippers","type" :"team","sportId"
+        :46,"teamId" :12,"team" :{"id" :12,"description" :"Los Angeles Clippers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:12"}],"published" :"2014-05-30T15:26:56Z","video" :[{"id" :11005423,"title"
+        :"Breaking Down The Clippers Sale","thumbnail" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_rovell_clippers_sale/dm_140530_nba_rovell_clippers_sale.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"News","trackingName"
+        :"*UNPUB 6/2 10AM COM_NBA News (Rovell On Clippers Sale Latetst) 2014/05/30"},"description"
+        :"Darren Rovell discusses former Microsoft CEO Steve Ballmer signing an agreement
+        to buy the Clippers for $2 billion.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=11005423&ex_cid=espnapi_public"}}}]},{"headline"
+        :"A new era for the Clippers","keywords" :["Los Angeles Clippers","Donald
+        Sterling","Los Angeles Laker","Steve Ballmer","Kobe Bryant","Blake Griffin"],"lastModified"
+        :"2014-05-30T22:08:19Z","premium" :true,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11005941"}},"web" :{"href"
+        :"http://insider.espn.go.com/nba/story/_/id/11005941/los-angeles-clippers-improve-court-front-office-nba?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11005941&ex_cid=espnapi_public"}},"type"
+        :"Story","related" :[],"id" :11005941,"story" :"","title" :"Los Angeles Clippers
+        will improve on the court, and in the front office - NBA","linkText" :"Elhassan:
+        New era for the Clippers","byline" :"Amin Elhassan","source" :"ESPN Insider","description"
+        :"Former Microsoft CEO Steve Ballmer will improve the Clippers on the court
+        and in the front office, Amin Elhassan writes. ","images" :[{"height" :324,"alt"
+        :"Clippers","width" :576,"name" :"Clippers 140427 [576x324] - Copy","caption"
+        :"Steve Ballmer will elevate the Clippers to true competition in the Los Angeles
+        market.","type" :"header","credit" :"AP Photo/Marcio Jose Sanchez","url" :"http://a.espncdn.com/photo/2014/0427/nba_a_clippers12_576x324.jpg"},{"height"
+        :200,"alt" :"Steve Ballmer, Adam Silver","width" :300,"name" :"Ballmer_Steve
+        140529 [300x200] - Copy","caption" :"Steve Ballmer, left, will bring along
+        with him a sense of stability for the entire franchise.","type" :"inline","credit"
+        :"Noel Vasquez/Getty Images","url" :"http://a.espncdn.com/photo/2014/0529/nba_g_bellm11_cr_300x200.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Los Angeles Clippers","type" :"fantasyTeam","sportId"
+        :3090,"fantasyTeamId" :12}],"published" :"2014-05-30T15:02:06Z","video" :[]},{"headline"
+        :"Seattle''s NBA hopes take hit","keywords" :["Steve Ballmer","Microsoft","Steve
+        Hansen","Seattle","Herb Kohl","expansion","Shelly Sterling","Donald Sterling","family
+        trust","Adam Silver","King County"],"lastModified" :"2014-05-30T16:15:56Z","audio"
+        :[{"id" :11005337,"title" :"Roger Mason Jr., NBA","description" :"NBPA first
+        VP Roger Mason Jr. discusses the proposed sale price of the Clippers, whether
+        the team is a good investment and the NBA''s handling of the Donald Sterling
+        situation.","links" :{"api" :{"audio" :{"href" :"http://api.espn.com/v1/audio/recordings/11005337"}},"web"
+        :{"href" :"http://espn.go.com/espnradio/play?id=11005337&ex_cid=espnapi_public"}}}],"premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11005695"}},"web"
+        :{"href" :"http://espn.go.com/nba/story/_/id/11005695/seattle-bid-nba-team-dealt-blow-steve-ballmer-agrees-purchase-los-angeles-clippers?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11005695&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Seattle again out of NBA picture ","type" :"HeadlineNews","related" :[{"id"
+        :11005970,"title" :"Pelton: New frontiers for franchise values <img src=\"http://assets.espn.go.com/icons/in.gif\"
+        width=\"11\" height=\"11\" border=\"0\" alt=\"Insider\" />","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11005970"}},"web" :{"href"
+        :"http://insider.espn.go.com/nba/story/_/id/11005367/the-los-angeles-clippers-sale-begin-new-ear-nba?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11005970&ex_cid=espnapi_public"}}}],"id"
+        :11005695,"story" :"","title" :"Seattle bid for NBA team dealt blow after
+        Steve Ballmer agrees to purchase Los Angeles Clippers","linkText" :"Seattle
+        left out as backer''s bucks head to LA","byline" :"Brian Windhorst","source"
+        :"ESPN.com","description" :"The $2 billion agreement between the Sterling
+        Family Trust and Seattle-based former Microsoft executive Steve Ballmer has
+        dealt a significant blow to Seattle''s long-running hopes to re-acquire an
+        NBA team.","images" :[{"height" :200,"alt" :"Steve Ballmer ","width" :300,"name"
+        :"Ballmer_Steve 140529 [300x200]","caption" :"Former Microsoft CEO Steve Ballmer
+        signed an agreement to buy the Clippers for $2 billion.","type" :"inline","credit"
+        :"Noel Vasquez/GC Images/Getty Images","url" :"http://a.espncdn.com/photo/2014/0529/nba_g_steveb1_cr_300x200.jpg"},{"height"
+        :324,"alt" :"","width" :576,"name" :"Breaking Down The Clippers Sale","caption"
+        :"Darren Rovell discusses former Microsoft CEO Steve Ballmer signing an agreement
+        to buy the Clippers for $2 billion.","type" :"video","url" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_rovell_clippers_sale/dm_140530_nba_rovell_clippers_sale.jpg"},{"height"
+        :324,"alt" :"Steve Ballmer","width" :576,"name" :"Ballmer_Steve 140529 [576x324]","type"
+        :"inline","credit" :"Noel Vasquez/GC Images/Getty Images","url" :"http://a.espncdn.com/photo/2014/0529/nba_g_steveb2_cr_576x324.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Milwaukee Bucks","type" :"team","sportId" :46,"teamId"
+        :15,"team" :{"id" :15,"description" :"Milwaukee Bucks","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/15"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=15&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:15"},{"description" :"Sacramento Kings","type" :"team","sportId"
+        :46,"teamId" :23,"team" :{"id" :23,"description" :"Sacramento Kings","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/23"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/sac/sacramento-kings?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=23&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:23"},{"description" :"Minnesota Timberwolves","type" :"team","sportId"
+        :46,"teamId" :16,"team" :{"id" :16,"description" :"Minnesota Timberwolves","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/16"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=16&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:16"},{"description" :"Los Angeles Clippers","type" :"team","sportId"
+        :46,"teamId" :12,"team" :{"id" :12,"description" :"Los Angeles Clippers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:12"}],"published" :"2014-05-30T14:30:33Z","video" :[{"id" :11005423,"title"
+        :"Breaking Down The Clippers Sale","thumbnail" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_rovell_clippers_sale/dm_140530_nba_rovell_clippers_sale.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"News","trackingName"
+        :"*UNPUB 6/2 10AM COM_NBA News (Rovell On Clippers Sale Latetst) 2014/05/30"},"description"
+        :"Darren Rovell discusses former Microsoft CEO Steve Ballmer signing an agreement
+        to buy the Clippers for $2 billion.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=11005423&ex_cid=espnapi_public"}}}]},{"headline"
+        :"New frontier of franchise values","keywords" :["Los Angeles Clippers","per
+        diem","Donald Sterling","Shelly Sterling","Steve Ballmer","winner''s curse"],"lastModified"
+        :"2014-05-30T20:44:34Z","premium" :true,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11005367"}},"web" :{"href"
+        :"http://insider.espn.go.com/nba/story/_/id/11005367/the-los-angeles-clippers-sale-begin-new-era-nba?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11005367&ex_cid=espnapi_public"}},"type"
+        :"Story","related" :[],"id" :11005367,"story" :"","title" :"The Los Angeles
+        Clippers'' sale could begin a new era - NBA","linkText" :"Pelton: New frontier
+        of franchise values","byline" :"Kevin Pelton","source" :"ESPN Insider","description"
+        :"Kevin Pelton breaks down the economics behind the competition for the Los
+        Angeles Clippers, and takes a look at the future of NBA franchise values.","images"
+        :[{"height" :324,"alt" :"Steve Ballmer","width" :576,"name" :"Ballmer_Steve
+        140529 [576x324] - Copy","caption" :"Has Steve Ballmer''s bid pioneered a
+        new era in NBA franchise values? ","type" :"header","credit" :"Noel Vasquez/GC
+        Images/Getty Images","url" :"http://a.espncdn.com/photo/2014/0529/nba_g_steveb2_cr_576x324.jpg"},{"height"
+        :324,"alt" :"Per Diem","width" :576,"name" :"Per Diem 140530 [576x324]","type"
+        :"header","credit" :"ESPN","url" :"http://a.espncdn.com/photo/2014/0530/in_perdiem_576x324.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Los Angeles Clippers","type" :"fantasyTeam","sportId"
+        :3090,"fantasyTeamId" :12}],"published" :"2014-05-30T13:13:24Z","video" :[]},{"headline"
+        :"Ballmer, Sterling trust strike $2B deal\n","keywords" :["steve ballmer","microsoft","donald
+        sterling","Clips","shelly sterling","sterling family trust","$2 billion","$2B"],"lastModified"
+        :"2014-05-30T20:00:35Z","audio" :[{"id" :11005337,"title" :"Roger Mason Jr.,
+        NBA","description" :"NBPA first VP Roger Mason Jr. discusses the proposed
+        sale price of the Clippers, whether the team is a good investment and the
+        NBA''s handling of the Donald Sterling situation.","links" :{"api" :{"audio"
+        :{"href" :"http://api.espn.com/v1/audio/recordings/11005337"}},"web" :{"href"
+        :"http://espn.go.com/espnradio/play?id=11005337&ex_cid=espnapi_public"}}}],"premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11003237"}},"web"
+        :{"href" :"http://espn.go.com/los-angeles/nba/story/_/id/11003237/former-microsoft-executive-steve-ballmer-submits-winning-bid-buy-clippers-according-sources?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11003237&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Ballmer, Clippers agree to $2B sale ","type" :"HeadlineNews","related" :[{"id"
+        :11006539,"title" :"Markazi: Clippers name should go with Sterling","links"
+        :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11006539"}},"web"
+        :{"href" :"http://espn.go.com/los-angeles/nba/story/_/id/11006068/los-angeles-clippers-name-exit-donald-sterling?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/wireless/story?storyId=11006539&ex_cid=espnapi_public"}}},{"id"
+        :11005970,"title" :"Pelton: New frontiers for franchise values <img src=\"http://assets.espn.go.com/icons/in.gif\"
+        width=\"11\" height=\"11\" border=\"0\" alt=\"Insider\" />","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11005970"}},"web" :{"href"
+        :"http://insider.espn.go.com/nba/story/_/id/11005367/the-los-angeles-clippers-sale-begin-new-ear-nba?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11005970&ex_cid=espnapi_public"}}},{"id"
+        :11005941,"title" :"Los Angeles Clippers will improve on the court, and in
+        the front office - NBA","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11005941"}},"web"
+        :{"href" :"http://insider.espn.go.com/nba/story/_/id/11005941/los-angeles-clippers-improve-court-front-office-nba?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11005941&ex_cid=espnapi_public"}}}],"id"
+        :11003237,"story" :"","title" :"Former Microsoft executive Steve Ballmer submits
+        winning bid to buy Clippers, according to sources","linkText" :"Ballmer, Clippers
+        sign $2B sale agreement","source" :"ESPN.com news services","description"
+        :"Shelly Sterling announced late Thursday night that she has signed an agreement
+        to sell the Los Angeles Clippers to former Microsoft chief executive Steve
+        Ballmer for $2 billion.","images" :[{"height" :200,"alt" :"Steve Ballmer ","width"
+        :300,"name" :"Ballmer_Steve 140529 [300x200]","caption" :"Former Microsoft
+        CEO Steve Ballmer signed an agreement to buy the Clippers for $2 billion.","type"
+        :"inline","credit" :"Noel Vasquez/GC Images/Getty Images","url" :"http://a.espncdn.com/photo/2014/0529/nba_g_steveb1_cr_300x200.jpg"},{"height"
+        :324,"alt" :"","width" :576,"name" :"Breaking Down The Clippers Sale","caption"
+        :"Darren Rovell discusses former Microsoft CEO Steve Ballmer signing an agreement
+        to buy the Clippers for $2 billion.","type" :"video","url" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_rovell_clippers_sale/dm_140530_nba_rovell_clippers_sale.jpg"}],"categories"
+        :[{"description" :"Los Angeles Clippers","type" :"team","sportId" :46,"teamId"
+        :12,"team" :{"id" :12,"description" :"Los Angeles Clippers","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:12"},{"description" :"NBA","type" :"league","sportId" :46,"leagueId"
+        :46,"league" :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/basketball/nba"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid" :"s:40~l:46"}],"published"
+        :"2014-05-29T23:22:36Z","video" :[{"id" :11005423,"title" :"Breaking Down
+        The Clippers Sale","thumbnail" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_rovell_clippers_sale/dm_140530_nba_rovell_clippers_sale.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"News","trackingName"
+        :"*UNPUB 6/2 10AM COM_NBA News (Rovell On Clippers Sale Latetst) 2014/05/30"},"description"
+        :"Darren Rovell discusses former Microsoft CEO Steve Ballmer signing an agreement
+        to buy the Clippers for $2 billion.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=11005423&ex_cid=espnapi_public"}}},{"id"
+        :11003697,"title" :"Ballmer And Clippers Sign Agreement","thumbnail" :"http://a.espncdn.com/media/motion/2014/0529/dm_140529_Ballmer_And_Clippers_Sign_Agreement/dm_140529_Ballmer_And_Clippers_Sign_Agreement.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"Highlight","trackingName"
+        :"**UNPUB WHEN DATED OR 6/1** COM_NBA Newser (Ballmer And Clippers Sign Agreement)
+        2014/5/29 ESHEET LA SportsCener"},"description" :"ESPNLosAngeles.com''s Ramona
+        Shelburne reports former Microsoft CEO Steve Ballmer has signed an agreement
+        with the Sterling family trust to buy the Clippers for $2 billion.","links"
+        :{"web" :{"href" :"http://espn.go.com/video/clip?id=11003697&ex_cid=espnapi_public"}}},{"id"
+        :11003365,"title" :"Clippers Sale Moving Quickly","thumbnail" :"http://a.espncdn.com/media/motion/2014/0529/dm_140529_Stephen_A_Smith_On_Clippers/dm_140529_Stephen_A_Smith_On_Clippers.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"News","trackingName"
+        :"**UNPUB WHEN DATED or 6/1** COM_NBA Newser (Stephen A. Smith On Clippers
+        Sale) 2014/5/29 ESHEET SportsCenter LA"},"description" :"Stephen A. Smith
+        evaluates the bids coming in for the Clippers.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=11003365&ex_cid=espnapi_public"}}},{"id"
+        :11003256,"title" :"Former Microsoft CEO Bids $2 Billion To Buy Clippers","thumbnail"
+        :"http://a.espncdn.com/media/motion/2014/0529/dm_140529_Ballmer_Wins_Bid_For_Clippers/dm_140529_Ballmer_Wins_Bid_For_Clippers.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"Highlight","trackingName"
+        :"**UNPUB WHEN DATED or 6/1** COM_NBA Newser (Former Microsoft CEO Bids $2
+        BIllion To Buy Clippers) 2014/5/29 SportsCenter LA"},"description" :"ESPN''s
+        Darren Rovell breaks down reports that former Microsoft CEO Steve Ballmer
+        has submitted a winning bid to buy the Clippers for $2 billion.","links" :{"web"
+        :{"href" :"http://espn.go.com/video/clip?id=11003256&ex_cid=espnapi_public"}}}]},{"headline"
+        :"OTL: NBA lax in Sterling oversight","keywords" :["Donald Sterling","NBA","Los
+        Angeles","racism","n-word","Mike Fish","Outside the Lines","Adam Silver","David
+        Stern","league","basketball","Olden Polynice","TMZ"],"lastModified" :"2014-06-01T14:45:14Z","premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11003074"}},"web"
+        :{"href" :"http://espn.go.com/espn/otl/story/_/id/11003074/otl-nba-investigate-prior-donald-sterling-incidents?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/wireless/story?storyId=11003074&ex_cid=espnapi_public"}},"shortLinkText"
+        :"OTL: NBA all-but ignored Sterling incidents ","type" :"HeadlineNews","related"
+        :[],"id" :11003074,"story" :"","title" :"OTL -- NBA didn''t investigate prior
+        Donald Sterling incidents","linkText" :"OTL: NBA all-but ignored Sterling
+        incidents","byline" :"Mike Fish","source" :"ESPN.com","description" :"The
+        NBA''s interest in Donald Sterling''s alleged misdeeds hardly existed prior
+        to the racist recordings released last month by TMZ.","images" :[{"height"
+        :200,"alt" :"Adam Silver","width" :300,"name" :"Silver_Adam 140502 [300x200]
+        - Copy","caption" :"NBA commissioner Adam Silver joined the league in 1992
+        and has been a special assistant to the commissioner, chief of staff, the
+        league''s president, chief operating officer and its deputy commissioner.
+        ","type" :"inline","credit" :"Elsa/Getty Images","url" :"http://a.espncdn.com/photo/2014/0502/nba_g_adam-silver_mb_300x200.jpg"},{"height"
+        :200,"alt" :"Donald Sterling and Rochelle Sterling","width" :300,"name" :"Sterling_Rochelle
+        & Donald 140523 [300x200] - Copy","caption" :"Donald Sterling and his wife,
+        Shelly Sterling, who solicited bids to sell the Clippers.","type" :"inline","credit"
+        :"Andrew D. Bernstein/NBAE/Getty Images","url" :"http://a.espncdn.com/photo/2014/0523/nba_g_sterlings_d1_300x200.jpg"},{"height"
+        :200,"alt" :"David Stern, Donald Sterling","width" :300,"name" :"David Stern,
+        Donald Sterling 140429 [300x200] - Copy","caption" :"Former NBA commissioner
+        David Stern and Donald Sterling at a 2012 playoff game.","type" :"inline","credit"
+        :"Soobum Im/USA TODAY Sports","url" :"http://a.espncdn.com/photo/2014/0429/nba_u_stern_kh_300x200.jpg"},{"height"
+        :324,"alt" :"","width" :576,"name" :"The NBA''s Sterling Scandal","caption"
+        :"\"Outside the Lines\" shares revealing depositions from past discrimination
+        cases against Clippers owners Donald and Shelly Sterling -- cases some say
+        should have prompted the NBA to take action years ago.","type" :"video","url"
+        :"http://a.espncdn.com/media/motion/2014/0531/dm_140531_otl_nba_sterling_scandal/dm_140531_otl_nba_sterling_scandal.jpg"}],"categories"
+        :[{"description" :"Los Angeles Clippers","type" :"team","sportId" :46,"teamId"
+        :12,"team" :{"id" :12,"description" :"Los Angeles Clippers","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lac/los-angeles-clippers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:12"},{"description" :"NBA","type" :"league","sportId" :46,"leagueId"
+        :46,"league" :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/basketball/nba"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid" :"s:40~l:46"}],"published"
+        :"2014-05-29T22:20:45Z","video" :[{"id" :11012214,"title" :"The NBA''s Sterling
+        Scandal","thumbnail" :"http://a.espncdn.com/media/motion/2014/0531/dm_140531_otl_nba_sterling_scandal/dm_140531_otl_nba_sterling_scandal.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"Feature","trackingName"
+        :"COM_NBA Feature (The NBA''s Sterling Scandal) 2014/05/31 CC ESHEET OTL"},"description"
+        :"\"Outside the Lines\" shares revealing depositions from past discrimination
+        cases against Clippers owners Donald and Shelly Sterling -- cases some say
+        should have prompted the NBA to take action years ago.","links" :{"web" :{"href"
+        :"http://espn.go.com/video/clip?id=11012214&ex_cid=espnapi_public"}}}]}]}'
+    http_version: 
+  recorded_at: Sun, 01 Jun 2014 17:39:59 GMT
+- request:
+    method: get
+    uri: http://api.espn.com/v1/sports/basketball/nba/teams/18/news?apikey=<ESPN_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-01.mashery.com
+      Server:
+      - Sun GlassFish Enterprise Server v2.1
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - ESPN API
+      Cache-Control:
+      - max-age=300
+      Date:
+      - Sun, 01 Jun 2014 17:40:00 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '44911'
+    body:
+      encoding: UTF-8
+      string: '{"timestamp" :"2014-06-01T17:40:00Z","resultsOffset" :0,"status" :"success","resultsLimit"
+        :10,"resultsCount" :446,"headlines" :[{"headline" :"Phil talks Melo, search
+        for coach","keywords" :["phil jackson","coaching search","opt out","clause"],"lastModified"
+        :"2014-05-31T23:53:22Z","premium" :false,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11006509"}},"web" :{"href"
+        :"http://espn.go.com/new-york/nba/story/_/id/11006509/phil-jackson-new-york-knicks-not-losing-sleep-carmelo-anthony-decision?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11006509&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Jackson concerned about Melo leaving Knicks ","type" :"HeadlineNews","related"
+        :[],"id" :11006509,"story" :"","title" :"Phil Jackson of New York Knicks ''not
+        losing sleep'' over Carmelo Anthony''s decision","linkText" :"Jackson ''not
+        losing sleep'' over Melo decision","byline" :"Ian Begley","source" :"ESPNNewYork.com","description"
+        :"Knicks president Phil Jackson said he''s \"not losing sleep\" over Carmelo
+        Anthony''s pending free agency. But Jackson admitted on Friday that he''s
+        \"definitely concerned\" about the idea that Anthony could sign with another
+        team this summer.","images" :[{"height" :200,"alt" :"Phil Jackson","width"
+        :300,"name" :"Jackson_Phil 140403 [300x200] - Copy","caption" :"Phil Jackson
+        says veteran Oklahoma City guard Derek Fisher is on his list of potential
+        replacements for fired coach Mike Woodson.","type" :"inline","credit" :"AP
+        Photo/Mark Lennihan","url" :"http://a.espncdn.com/photo/2014/0403/ny_a_jackson01jr_300x200.jpg"},{"height"
+        :324,"alt" :"","width" :576,"name" :"Knicks Closing In On Coach?","caption"
+        :"ESPN New York''s Ian Begley gives the latest on the Knicks'' coaching search
+        and if Carmelo Anthony will opt in to his deal.","type" :"video","url" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_ian_begley/dm_140530_nba_ian_begley.jpg"},{"height"
+        :324,"alt" :"Phil Jackson","width" :576,"name" :"Jackson_Phil 140403 [576x324]","type"
+        :"inline","credit" :"Maddie Meyer/Getty Images","url" :"http://a.espncdn.com/photo/2014/0403/ny_g_phil-jackson_mb_576x324.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"New York Knicks","type" :"team","sportId" :46,"teamId"
+        :18,"team" :{"id" :18,"description" :"New York Knicks","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/ny/new-york-knicks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:18"},{"description" :"Carmelo Anthony","type" :"athlete","sportId"
+        :46,"athleteId" :1975,"athlete" :{"id" :1975,"description" :"Carmelo Anthony","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/1975"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/1975/carmelo-anthony?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=1975&ex_cid=espnapi_public"}}}}}],"published"
+        :"2014-05-30T16:35:23Z","video" :[{"id" :11006937,"title" :"Knicks Closing
+        In On Coach?","thumbnail" :"http://a.espncdn.com/media/motion/2014/0530/dm_140530_nba_ian_begley/dm_140530_nba_ian_begley.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"Analysis","trackingName"
+        :"**UNPUB 6/2 2PM** COM_NBA_Analysis (Begley on Knicks Coaching/Carmelo) 2014/05/30
+        ESHEET "},"description" :"ESPN New York''s Ian Begley gives the latest on
+        the Knicks'' coaching search and if Carmelo Anthony will opt in to his deal.","links"
+        :{"web" :{"href" :"http://espn.go.com/video/clip?id=11006937&ex_cid=espnapi_public"}}}]},{"headline"
+        :"NBA adds games in Mexico, London","keywords" :["global","mexico","london","adam
+        silver"],"lastModified" :"2014-05-29T15:03:02Z","premium" :false,"mobileStory"
+        :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11000492"}},"web"
+        :{"href" :"http://espn.go.com/nba/story/_/id/11000492/nba-expands-global-reach-play-regular-season-games-mexico-london?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=11000492&ex_cid=espnapi_public"}},"type"
+        :"HeadlineNews","related" :[],"id" :11000492,"story" :"","title" :"NBA expands
+        global reach, will play regular-season games in Mexico, London","linkText"
+        :"NBA adds global games in Mexico, London","source" :"Associated Press","description"
+        :"The NBA will play regular-season games in Mexico City and London as part
+        of its extended global schedule for next season.","images" :[{"height" :324,"alt"
+        :"Adam Silver","width" :576,"name" :"Silver_Adam 140206 [576x324]","type"
+        :"inline","credit" :"Nathaniel S. Butler/NBAE/Getty Images","url" :"http://a.espncdn.com/photo/2014/0206/nba_g_silvera_576x324.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Houston Rockets","type" :"team","sportId" :46,"teamId"
+        :10,"team" :{"id" :10,"description" :"Houston Rockets","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/10"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/hou/houston-rockets?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=10&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:10"},{"description" :"Minnesota Timberwolves","type" :"team","sportId"
+        :46,"teamId" :16,"team" :{"id" :16,"description" :"Minnesota Timberwolves","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/16"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=16&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:16"},{"description" :"Milwaukee Bucks","type" :"team","sportId"
+        :46,"teamId" :15,"team" :{"id" :15,"description" :"Milwaukee Bucks","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/15"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=15&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:15"},{"description" :"New York Knicks","type" :"team","sportId"
+        :46,"teamId" :18,"team" :{"id" :18,"description" :"New York Knicks","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/ny/new-york-knicks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:18"}],"published" :"2014-05-29T14:13:22Z","video" :[]},{"headline"
+        :"Carter-Williams is unanimous choice","keywords" :[],"lastModified" :"2014-05-22T18:59:49Z","premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10970331"}},"web"
+        :{"href" :"http://espn.go.com/nba/story/_/id/10970331/michael-carter-williams-philadelphia-76ers-only-unanimous-choice-nba-all-rookie-team?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=10970331&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Sixers'' Carter-Williams headlines rookie team","type" :"HeadlineNews","related"
+        :[],"id" :10970331,"story" :"","title" :"Michael Carter-Williams of Philadelphia
+        76ers is only unanimous choice on NBA all-rookie team","linkText" :"Sixers''
+        Carter-Williams headlines rookie team","source" :"Associated Press","description"
+        :"Michael Carter-Williams has been unanimously chosen to the NBA''s all-rookie
+        team.","images" :[{"height" :200,"alt" :"Michael Carter-Williams","width"
+        :300,"name" :"Carter-Williams_Michael 140522 [300x200]","caption" :"Sixers
+        point guard Michael Carter-Williams was the only unanimous choice for the
+        NBA''s All-Rookie Team.","type" :"inline","credit" :"Jesse D. Garrabrant/NBAE/Getty
+        Images","url" :"http://a.espncdn.com/photo/2014/0503/nba_g_michael-carter-williams_mb_300x200.jpg"},{"height"
+        :324,"alt" :"Michael Carter-Williams","width" :576,"name" :"Carter-Williams_Michael
+        140415 [576x324]","type" :"inline","credit" :"Howard Smith/USA TODAY Sports","url"
+        :"http://a.espncdn.com/photo/2014/0415/nba_u_carter-williams_b1_576x324.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Philadelphia 76ers","type" :"team","sportId"
+        :46,"teamId" :20,"team" :{"id" :20,"description" :"Philadelphia 76ers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/20"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=20&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:20"},{"description" :"Victor Oladipo","type" :"athlete","sportId"
+        :46,"athleteId" :2527963,"athlete" :{"id" :2527963,"description" :"Victor
+        Oladipo","links" :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/2527963"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/2527963/victor-oladipo?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=2527963&ex_cid=espnapi_public"}}}}},{"description"
+        :"Orlando Magic","type" :"team","sportId" :46,"teamId" :19,"team" :{"id" :19,"description"
+        :"Orlando Magic","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/19"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/orl/orlando-magic?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=19&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:19"},{"description" :"Trey Burke","type" :"athlete","sportId"
+        :46,"athleteId" :2579260,"athlete" :{"id" :2579260,"description" :"Trey Burke","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/2579260"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/2579260/trey-burke?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=2579260&ex_cid=espnapi_public"}}}}},{"description"
+        :"Utah Jazz","type" :"team","sportId" :46,"teamId" :26,"team" :{"id" :26,"description"
+        :"Utah Jazz","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/26"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/utah/utah-jazz?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=26&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:26"},{"description" :"Mason Plumlee","type" :"athlete","sportId"
+        :46,"athleteId" :2488653,"athlete" :{"id" :2488653,"description" :"Mason Plumlee","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/2488653"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/2488653/mason-plumlee?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=2488653&ex_cid=espnapi_public"}}}}},{"description"
+        :"Brooklyn Nets","type" :"team","sportId" :46,"teamId" :17,"team" :{"id" :17,"description"
+        :"Brooklyn Nets","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/17"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/bkn/brooklyn-nets?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=17&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:17"},{"description" :"Tim Hardaway Jr.","type" :"athlete","sportId"
+        :46,"athleteId" :2528210,"athlete" :{"id" :2528210,"description" :"Tim Hardaway
+        Jr.","links" :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/2528210"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/2528210/tim-hardaway-jr.?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=2528210&ex_cid=espnapi_public"}}}}},{"description"
+        :"New York Knicks","type" :"team","sportId" :46,"teamId" :18,"team" :{"id"
+        :18,"description" :"New York Knicks","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/ny/new-york-knicks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:18"},{"description" :"Kelly Olynyk","type" :"athlete","sportId"
+        :46,"athleteId" :2489663,"athlete" :{"id" :2489663,"description" :"Kelly Olynyk","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/2489663"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/2489663/kelly-olynyk?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=2489663&ex_cid=espnapi_public"}}}}},{"description"
+        :"Boston Celtics","type" :"team","sportId" :46,"teamId" :2,"team" :{"id" :2,"description"
+        :"Boston Celtics","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/2"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/bos/boston-celtics?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=2&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:2"},{"description" :"Giannis Antetokounmpo","type" :"athlete","sportId"
+        :46,"athleteId" :3032977,"athlete" :{"id" :3032977,"description" :"Giannis
+        Antetokounmpo","links" :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/3032977"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/3032977/giannis-antetokounmpo?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=3032977&ex_cid=espnapi_public"}}}}},{"description"
+        :"Milwaukee Bucks","type" :"team","sportId" :46,"teamId" :15,"team" :{"id"
+        :15,"description" :"Milwaukee Bucks","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/15"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=15&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:15"},{"description" :"Gorgui Dieng","type" :"athlete","sportId"
+        :46,"athleteId" :2534781,"athlete" :{"id" :2534781,"description" :"Gorgui
+        Dieng","links" :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/2534781"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/2534781/gorgui-dieng?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=2534781&ex_cid=espnapi_public"}}}}},{"description"
+        :"Minnesota Timberwolves","type" :"team","sportId" :46,"teamId" :16,"team"
+        :{"id" :16,"description" :"Minnesota Timberwolves","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/16"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=16&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:16"},{"description" :"Charlotte Bobcats","type" :"team","sportId"
+        :46,"teamId" :30,"team" :{"id" :30,"description" :"Charlotte Bobcats","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/30"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/cha/charlotte-bobcats?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=30&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:30"},{"description" :"Steven Adams","type" :"athlete","sportId"
+        :46,"athleteId" :2991235,"athlete" :{"id" :2991235,"description" :"Steven
+        Adams","links" :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/2991235"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/2991235/steven-adams?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=2991235&ex_cid=espnapi_public"}}}}},{"description"
+        :"Oklahoma City Thunder","type" :"team","sportId" :46,"teamId" :25,"team"
+        :{"id" :25,"description" :"Oklahoma City Thunder","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/25"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=25&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:25"}],"published" :"2014-05-22T18:42:57Z","video" :[]},{"headline"
+        :"Phil should coach the Knicks","keywords" :["NBA","2014-15 season","new york
+        knicks","phil jackson","carmelo anthony","triangle offense"],"lastModified"
+        :"2014-05-22T16:45:50Z","premium" :true,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10968303"}},"web" :{"href"
+        :"http://insider.espn.go.com/nba/story/_/id/10968303/why-phil-jackson-coach-new-york-knicks-nba?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=10968303&ex_cid=espnapi_public"}},"type"
+        :"Story","related" :[],"id" :10968303,"story" :"","title" :"Why Phil Jackson
+        should coach New York Knicks - NBA","linkText" :"Doolittle: Phil should coach
+        the Knicks","byline" :"Bradford Doolittle","source" :"ESPN Insider","description"
+        :"Bradford Doolittle outlines why New York Knicks president Phil Jackson should
+        take over the team''s head-coaching position for the 2014-15 season.","images"
+        :[{"height" :324,"alt" :"Phil Jackson","width" :576,"name" :"Jackson_Phil
+        140403 [576x324] - Copy","caption" :"Phil Jackson would be the Knicks'' best
+        option to implement the triangle offense.","type" :"header","credit" :"AP
+        Photo/Mark Lennihan","url" :"http://a.espncdn.com/photo/2014/0403/ny_a_jackson01jr_576x324.jpg"},{"height"
+        :300,"alt" :"Carmelo Anthony","width" :200,"name" :"Anthony_Carmelo 131120
+        [200x300] - Copy","caption" :"Would Carmelo Anthony be more likely to re-sign
+        with the Knicks if Jackson coached next season?","type" :"inline","credit"
+        :"Brad Penner/USA TODAY Sports","url" :"http://a.espncdn.com/photo/2013/1120/ny_u_anthony_kh_200x300.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"New York Knicks","type" :"fantasyTeam","sportId"
+        :3090,"fantasyTeamId" :18}],"published" :"2014-05-22T14:22:06Z","video" :[]},{"headline"
+        :"Durant: Fisher will do ''great job''","keywords" :["Phil Jackson","coach","candidate"],"lastModified"
+        :"2014-05-21T15:52:04Z","premium" :false,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10963466"}},"web" :{"href"
+        :"http://espn.go.com/nba/playoffs/2014/story/_/id/10963466/kevin-durant-oklahoma-city-thunder-endorses-derek-fisher-coach-candidate?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=10963466&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Durant endorses Fisher as coach candidate ","type" :"HeadlineNews","related"
+        :[],"id" :10963466,"story" :"","title" :"Kevin Durant of Oklahoma City Thunder
+        endorses Derek Fisher as coach candidate","linkText" :"Durant endorses Fisher
+        as coach candidate","source" :"ESPN.com news services","description" :"Kevin
+        Durant said Tuesday that teammate Derek Fisher has all the attributes to make
+        a good NBA coach, if that''s the path his Oklahoma City Thunder teammate chooses
+        after this season.","images" :[{"height" :300,"alt" :"Derek Fisher","width"
+        :200,"name" :"Fisher_Derek 140521 [200x300]","caption" :"Derek Fisher has
+        Kevin Durant''s endorsement. \"He''s a great motivator, great speaker and
+        can really relate to a lot of guys,\" Durant says of his teammate.","type"
+        :"inline","credit" :"Layne Murdoch/NBAE/Getty","url" :"http://a.espncdn.com/photo/2014/0521/nba_g_fisherd_200x300.jpg"},{"height"
+        :324,"alt" :"Derek Fisher ","width" :576,"name" :"Fisher_Derek  140117 [576x324]","type"
+        :"inline","credit" :"AP Photo/Danny Johnston","url" :"http://a.espncdn.com/photo/2014/0117/nba_a_fisher_d1_576x324.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Oklahoma City Thunder","type" :"team","sportId"
+        :46,"teamId" :25,"team" :{"id" :25,"description" :"Oklahoma City Thunder","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/25"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/okc/oklahoma-city-thunder?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=25&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:25"},{"description" :"New York Knicks","type" :"team","sportId"
+        :46,"teamId" :18,"team" :{"id" :18,"description" :"New York Knicks","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/ny/new-york-knicks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:18"},{"description" :"Kevin Durant","type" :"athlete","sportId"
+        :46,"athleteId" :3202,"athlete" :{"id" :3202,"description" :"Kevin Durant","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/3202"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/3202/kevin-durant?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=3202&ex_cid=espnapi_public"}}}}},{"description"
+        :"Derek Fisher","type" :"athlete","sportId" :46,"athleteId" :246,"athlete"
+        :{"id" :246,"description" :"Derek Fisher","links" :{"api" :{"athletes" :{"href"
+        :"http://api.espn.com/v1/sports/basketball/nba/athletes/246"}},"web" :{"athletes"
+        :{"href" :"http://espn.go.com/nba/player/_/id/246/derek-fisher?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=246&ex_cid=espnapi_public"}}}}}],"published"
+        :"2014-05-21T14:09:08Z","video" :[]},{"headline" :"Bucks, others hope for
+        No. 1 pick","keywords" :["NBA draft","lottery","pingpong ball","Adam Silver"],"lastModified"
+        :"2014-05-20T19:44:58Z","audio" :[{"id" :10955180,"title" :"Andrew Wiggins,
+        NBA","description" :"NBA draft prospect Andrew Wiggins weighs in on his time
+        at Kansas, how he can improve, his expectations for the next level, the draft
+        lottery and more.","links" :{"api" :{"audio" :{"href" :"http://api.espn.com/v1/audio/recordings/10955180"}},"web"
+        :{"href" :"http://espn.go.com/espnradio/play?id=10955180&ex_cid=espnapi_public"}}}],"premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10957713"}},"web"
+        :{"href" :"http://espn.go.com/nba/draft2014/story/_/id/10957713/nba-teams-gear-draft-lottery?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=10957713&ex_cid=espnapi_public"}},"shortLinkText"
+        :"NBA''s worst hope for lottery best ","type" :"HeadlineNews","related" :[],"id"
+        :10957713,"story" :"","title" :"NBA teams gear up for draft lottery ","linkText"
+        :"League''s losers ready to roll dice at lottery","source" :"ESPN.com news
+        services","description" :"After 67 losses this season, the Milwaukee Bucks
+        are hoping to come away winners of this year''s NBA draft lottery.","images"
+        :[{"height" :324,"alt" :"","width" :576,"name" :"NBA Draft Prospects","caption"
+        :"Tim Legler and Tom Penn rank their top five NBA prospects heading into the
+        draft.","type" :"video","url" :"http://a.espncdn.com/media/motion/2014/0520/dm_140520_nba_draft_prospects/dm_140520_nba_draft_prospects.jpg"},{"height"
+        :324,"alt" :"Lottery","width" :576,"name" :"Lottery 131222 [576x324]","type"
+        :"inline","credit" :"Ned Dishman/NBAE /Getty Images","url" :"http://a.espncdn.com/photo/2013/1222/nba_g_lottts_576x324.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Milwaukee Bucks","type" :"team","sportId" :46,"teamId"
+        :15,"team" :{"id" :15,"description" :"Milwaukee Bucks","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/15"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/mil/milwaukee-bucks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=15&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:15"},{"description" :"Philadelphia 76ers","type" :"team","sportId"
+        :46,"teamId" :20,"team" :{"id" :20,"description" :"Philadelphia 76ers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/20"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/phi/philadelphia-76ers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=20&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:20"},{"description" :"NBA Draft","type" :"league","sportId"
+        :3380,"leagueId" :3380,"league" :{"id" :3380,"description" :"NBA Draft","links"
+        :{"api" :{"leagues" :{}},"web" :{"leagues" :{}},"mobile" :{"leagues" :{}}}},"uid"
+        :"s:3380"},{"description" :"Los Angeles Lakers","type" :"team","sportId" :46,"teamId"
+        :13,"team" :{"id" :13,"description" :"Los Angeles Lakers","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/13"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=13&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:13"},{"description" :"New York Knicks","type" :"team","sportId"
+        :46,"teamId" :18,"team" :{"id" :18,"description" :"New York Knicks","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/ny/new-york-knicks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:18"},{"description" :"Boston Celtics","type" :"team","sportId"
+        :46,"teamId" :2,"team" :{"id" :2,"description" :"Boston Celtics","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/2"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/bos/boston-celtics?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=2&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:2"},{"description" :"Utah Jazz","type" :"team","sportId" :46,"teamId"
+        :26,"team" :{"id" :26,"description" :"Utah Jazz","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/26"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/utah/utah-jazz?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=26&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:26"}],"published" :"2014-05-20T14:43:07Z","video" :[{"id" :10957854,"title"
+        :"NBA Draft Prospects","thumbnail" :"http://a.espncdn.com/media/motion/2014/0520/dm_140520_nba_draft_prospects/dm_140520_nba_draft_prospects.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"Feature","trackingName"
+        :"*UNPUB 6/26 AFTER DRAFT COM_NBA Analysis (Top 5 Draft Prospects With Legler/Penn)
+        2014/05/20 SC"},"description" :"Tim Legler and Tom Penn rank their top five
+        NBA prospects heading into the draft.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=10957854&ex_cid=espnapi_public"}}}]},{"headline"
+        :"Can Knicks nab a 2nd-round pick?","keywords" :["NBA","2013 NBA draft","Insider","Iman
+        Shumpert","Carmelo Anthony","Tyson Chandler","Amare Stoudemire","Andrea Bargnani","J.R.
+        Smith","Nick Johnson","Glenn Robinson","Isaiah Austin"],"lastModified" :"2014-05-21T02:50:15Z","premium"
+        :true,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10956703"}},"web"
+        :{"href" :"http://insider.espn.go.com/nba/draft2014/story/_/id/10956703/new-york-knicks?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=10956703&ex_cid=espnapi_public"}},"type"
+        :"Story","related" :[],"id" :10956703,"story" :"","title" :"2014 NBA draft
+        - Lottery team draft guide: New York Knicks","linkText" :"Doolittle: Knicks
+        NBA draft guide","byline" :"Bradford Doolittle","source" :"ESPN Insider","description"
+        :"Bradford Doolittle breaks down the New York Knicks'' draft profile, needs
+        and potential 2014 picks.","images" :[{"height" :324,"alt" :"Iman Shumpert","width"
+        :576,"name" :"Shumpert_Iman 140206 [576x324] - Copy","caption" :"A defense-oriented
+        guard, point or combo, would be useful to share the floor with Iman Shumpert.","type"
+        :"header","credit" :"Tom Szczerbowski/USA TODAY Sports","url" :"http://a.espncdn.com/photo/2014/0206/ny_u_shumperti_576x324.jpg"},{"height"
+        :200,"alt" :"Nick Johnson ","width" :300,"name" :"Wisconsin vs Arizona (Nick
+        Johnson) 140329 [300x200] - Copy","caption" :"Nick Johnson would make an athletic
+        and efficient second-round pick. ","type" :"inline","credit" :"Robert Hanashiro/USA
+        TODAY Sports","url" :"http://a.espncdn.com/photo/2014/0329/ncb_u_johnson_300x200.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"NBA Draft","type" :"league","sportId" :3380,"leagueId"
+        :3380,"league" :{"id" :3380,"description" :"NBA Draft","links" :{"api" :{"leagues"
+        :{}},"web" :{"leagues" :{}},"mobile" :{"leagues" :{}}}},"uid" :"s:3380"},{"description"
+        :"New York Knicks","type" :"fantasyTeam","sportId" :3090,"fantasyTeamId" :18}],"published"
+        :"2014-05-20T04:04:33Z","video" :[]},{"headline" :"Knicks want to talk to
+        Derek Fisher","keywords" :["phil jackson","coach","steve kerr"],"lastModified"
+        :"2014-05-19T22:33:27Z","premium" :false,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10952520"}},"web" :{"href"
+        :"http://espn.go.com/new-york/nba/story/_/id/10952520/new-york-knicks-want-coaching-search-begin-talking-derek-fisher?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=10952520&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Sources: Knicks want to talk to Fisher first ","type" :"HeadlineNews","related"
+        :[],"id" :10952520,"story" :"","title" :"New York Knicks want coaching search
+        to begin after talking to Derek Fisher ","linkText" :"Sources: Knicks want
+        to talk to Fisher first","byline" :"Marc Stein and Ramona Shelburne","source"
+        :"ESPN.com","description" :"New York Knicks president Phil Jackson continues
+        to send out signals that he''s in no rush to hire a coach until he can seriously
+        discuss the position with Oklahoma City''s Derek Fisher, according to sources
+        close to the process.","images" :[{"height" :300,"alt" :"Phil Jackson","width"
+        :200,"name" :"Jackson_Phil 140519 [200x300]","caption" :"Sources say Phil
+        Jackson and the Knicks will start their coaching search by feeling out Derek
+        Fisher.","type" :"inline","credit" :"Kirby Lee/Image of Sport/USA TODAY Sports","url"
+        :"http://a.espncdn.com/photo/2014/0518/nba_u_dfishts_200x300.jpg"},{"height"
+        :324,"alt" :"Phil Jackson","width" :576,"name" :"Jackson_Phil 140519 [576x324]","caption"
+        :"Derek Fisher ticks off all the boxes. But will he ultimately be the Knicks''
+        next coach?","type" :"inline","credit" :"Kirby Lee/Image of Sport/USA TODAY
+        Sports","url" :"http://a.espncdn.com/photo/2014/0518/nba_u_dfishts_576x324.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"New York Knicks","type" :"team","sportId" :46,"teamId"
+        :18,"team" :{"id" :18,"description" :"New York Knicks","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/ny/new-york-knicks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:18"},{"description" :"Derek Fisher","type" :"athlete","sportId"
+        :46,"athleteId" :246,"athlete" :{"id" :246,"description" :"Derek Fisher","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/246"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/246/derek-fisher?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=246&ex_cid=espnapi_public"}}}}}],"published"
+        :"2014-05-19T03:18:47Z","video" :[]},{"headline" :"Kevin Love likes Warriors,
+        Bulls","keywords" :["deal","Glen Taylor","Wolves","T-Wolves","extension","free
+        agent"],"lastModified" :"2014-05-20T00:19:47Z","premium" :false,"mobileStory"
+        :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10949807"}},"web"
+        :{"href" :"http://espn.go.com/nba/story/_/id/10949807/kevin-love-tells-minnesota-timberwolves-sign-extension-likes-chicago-bulls-golden-state-warriors?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=10949807&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Sources: Love will test market ","type" :"HeadlineNews","related" :[{"id"
+        :10953101,"title" :"NBA: What will Minnesota Timberwolves do with Kevin Love","links"
+        :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10953101"}},"web"
+        :{"href" :"http://espn.go.com/nba/story/_/id/10953101/minnesota-timberwolves-do-kevin-love?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=10953101&ex_cid=espnapi_public"}}}],"id"
+        :10949807,"story" :"","title" :"Kevin Love tells Minnesota Timberwolves he
+        won''t sign extension, likes Chicago Bulls and Golden State Warriors","linkText"
+        :"Sources: Love tells Wolves he''ll test market","byline" :"Marc Stein and
+        Ramona Shelburne","source" :"ESPN.com","description" :"Kevin Love has made
+        it clear to the Minnesota Timberwolves that he intends to become an unrestricted
+        free agent after next season and has no interest in a contract extension this
+        summer to stay in Minnesota, according to sources.","images" :[{"height" :200,"alt"
+        :"Kevin Love","width" :300,"name" :"Love_Kevin 140328 [300x200]","caption"
+        :"Kevin Love has told the Timberwolves that he is not interested in a long-term
+        deal to stay in Minnesota, according to sources.","type" :"inline","credit"
+        :"Jesse Johnson/USA TODAY Sports","url" :"http://a.espncdn.com/photo/2014/0328/la_u_kevin-love_mb_300x200.jpg"},{"height"
+        :324,"alt" :"","width" :576,"name" :"Love Intends To Test Market","caption"
+        :"ESPN NBA analyst Amin Elhassan has the latest on Timerwolves star Kevin
+        Love, who intends to become an unrestricted free agent after next season and
+        test free agency.","type" :"video","url" :"http://a.espncdn.com/media/motion/2014/0518/dm_140518_nba_kevinLove_movingon_headline/dm_140518_nba_kevinLove_movingon_headline.jpg"},{"height"
+        :324,"alt" :"Kevin Love","width" :576,"name" :"Love_Kevin 140328 [576x324]","caption"
+        :"Kevin Love has one year remaining on his contract with the Timberwolves,
+        and the Lakers will be among many suitors should he decide to leave Minnesota.\n","type"
+        :"inline","credit" :"Jesse Johnson/USA TODAY Sports","url" :"http://a.espncdn.com/photo/2014/0328/la_u_kevin-love_mb_576x324.jpg"}],"categories"
+        :[{"description" :"Minnesota Timberwolves","type" :"team","sportId" :46,"teamId"
+        :16,"team" :{"id" :16,"description" :"Minnesota Timberwolves","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/16"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/min/minnesota-timberwolves?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=16&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:16"},{"description" :"NBA","type" :"league","sportId" :46,"leagueId"
+        :46,"league" :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/basketball/nba"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid" :"s:40~l:46"},{"description"
+        :"Golden State Warriors","type" :"team","sportId" :46,"teamId" :9,"team" :{"id"
+        :9,"description" :"Golden State Warriors","links" :{"api" :{"teams" :{"href"
+        :"http://api.espn.com/v1/sports/basketball/nba/teams/9"}},"web" :{"teams"
+        :{"href" :"http://espn.go.com/nba/team/_/name/gs/golden-state-warriors?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=9&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:9"},{"description" :"Chicago Bulls","type" :"team","sportId"
+        :46,"teamId" :4,"team" :{"id" :4,"description" :"Chicago Bulls","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/4"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/chi/chicago-bulls?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=4&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:4"},{"description" :"Los Angeles Lakers","type" :"team","sportId"
+        :46,"teamId" :13,"team" :{"id" :13,"description" :"Los Angeles Lakers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/13"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=13&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:13"},{"description" :"New York Knicks","type" :"team","sportId"
+        :46,"teamId" :18,"team" :{"id" :18,"description" :"New York Knicks","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/ny/new-york-knicks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:18"},{"description" :"Phoenix Suns","type" :"team","sportId"
+        :46,"teamId" :21,"team" :{"id" :21,"description" :"Phoenix Suns","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/21"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/phx/phoenix-suns?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=21&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:21"},{"description" :"Kevin Love","type" :"athlete","sportId"
+        :46,"athleteId" :3449,"athlete" :{"id" :3449,"description" :"Kevin Love","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/athletes/3449"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nba/player/_/id/3449/kevin-love?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nba/playercard?playerId=3449&ex_cid=espnapi_public"}}}}}],"published"
+        :"2014-05-18T15:17:20Z","video" :[{"id" :10951803,"title" :"Love Intends To
+        Test Market","thumbnail" :"http://a.espncdn.com/media/motion/2014/0518/dm_140518_nba_kevinLove_movingon_headline/dm_140518_nba_kevinLove_movingon_headline.jpg","tracking"
+        :{"sportName" :"nba","leagueName" :"No League","coverageType" :"Analysis","trackingName"
+        :"COM_NBA News (Love Intends To Test Market) 2014/05/18 Headlines"},"description"
+        :"ESPN NBA analyst Amin Elhassan has the latest on Timerwolves star Kevin
+        Love, who intends to become an unrestricted free agent after next season and
+        test free agency.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=10951803&ex_cid=espnapi_public"}}}]},{"headline"
+        :"Mike Dunleavy up for N.Y., L.A. jobs","keywords" :["mike dunleavy","coach","phil
+        jackson","job"],"lastModified" :"2014-05-18T01:45:51Z","premium" :false,"mobileStory"
+        :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10946674"}},"web"
+        :{"href" :"http://espn.go.com/new-york/nba/story/_/id/10946674/mike-dunleavy-meets-phil-jackson-new-york-knicks-job?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nba/story?storyId=10946674&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Sources: Dunleavy candidate for Knicks job","type" :"HeadlineNews","related"
+        :[],"id" :10946674,"story" :"","title" :"Mike Dunleavy meets with Phil Jackson
+        about New York Knicks job","linkText" :"Sources: Dunleavy candidate for Knicks
+        job","byline" :"Chris Broussard","source" :"ESPN The Magazine","description"
+        :"Phil Jackson met with NBA lifer Mike Dunleavy on Friday morning to discuss
+        the New York Knicks head coaching job, sources confirmed to ESPN.com.","images"
+        :[{"height" :324,"alt" :"Mike Dunleavy","width" :576,"name" :"Dunleavy_Mike
+        100107 [576x324]","type" :"inline","credit" :"David Sherman/NBAE/Getty Images
+        ","url" :"http://a.espncdn.com/photo/2010/0107/nba_g_dunleavy11_576.jpg"}],"categories"
+        :[{"description" :"NBA","type" :"league","sportId" :46,"leagueId" :46,"league"
+        :{"id" :46,"description" :"NBA","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/basketball/nba"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nba/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nba/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46"},{"description" :"Los Angeles Lakers","type" :"team","sportId"
+        :46,"teamId" :13,"team" :{"id" :13,"description" :"Los Angeles Lakers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/13"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/lal/los-angeles-lakers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=13&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:13"},{"description" :"New York Knicks","type" :"team","sportId"
+        :46,"teamId" :18,"team" :{"id" :18,"description" :"New York Knicks","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/basketball/nba/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nba/team/_/name/ny/new-york-knicks?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:40~l:46~t:18"}],"published" :"2014-05-17T20:10:55Z","video" :[]}]}'
+    http_version: 
+  recorded_at: Sun, 01 Jun 2014 17:40:00 GMT
+recorded_with: VCR 2.9.2

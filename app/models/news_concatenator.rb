@@ -1,6 +1,6 @@
 class NewsConcatenator
 
-  def initialize(baseball_data, basketball_data = nil, football_data = nil)
+  def initialize(baseball_data, basketball_data, football_data = nil)
     @baseball_data = baseball_data
     @basketball_data = basketball_data
     @football_data = football_data

@@ -5,14 +5,14 @@ describe EspnApi do
   it 'can get a stream for baseball' do
     VCR.use_cassette('models/mariners_news') do
       espn_api = EspnApi.new
-      expect(espn_api.baseball(12).flatten[0]["headline"]).to eq 'Martinez, Cabrera lead Detroit past Seattle 6-3'
+      expect(espn_api.baseball('12').flatten[0]['headline']).to eq 'Bloomquist\'s 2 RBIs lead M\'s over Tigers'
     end
   end
 
   it 'can get a stream for the la clippers' do
     VCR.use_cassette('models/clippers_news') do
       espn_api = EspnApi.new
-      expect(espn_api.clippers[0]['headline']).to eq 'Clips sale pending board approval'
+      expect(espn_api.basketball('12').flatten[0]['headline']).to eq 'Clips sale pending board approval'
     end
   end
 

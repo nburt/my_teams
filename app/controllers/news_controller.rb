@@ -3,11 +3,9 @@ class NewsController < ApplicationController
   def index
     espn_api = EspnApi.new
     user = User.find(current_user.id)
-    if user.baseball != nil
-      news_concatenator = NewsConcatenator.new(espn_api.baseball(user.baseball))
+    if user.have_team
+      news_concatenator = NewsConcatenator.new(espn_api.baseball(user.baseball), espn_api.basketball(user.basketball))
       @all_news = news_concatenator.merge
-    else
-      @all_news = []
     end
   end
 

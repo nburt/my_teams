@@ -92,6 +92,19 @@ article {
   }
 }
 
+#add_teams_text {
+  background-color: $main_orange;
+  padding: 1em;
+  border-radius: 5px;
+  text-align: center;
+  a {
+    color: white;
+    &:hover {
+      color: $main_blue;
+    }
+  }
+}
+
 /* forms */
 
 .team_form_container {
@@ -107,10 +120,10 @@ article {
     text-align: center;
     font-size: 1.5em;
     font-weight: bold;
-    margin-bottom: .25em;
+    margin: .25em 0;
+    clear: both;
   }
   h4 {
-    text-align: center;
     color: white;
     font-size: 1.25em;
     margin: .5em 0 .75em;
@@ -131,30 +144,42 @@ article {
     input {
       margin-top: 2em;
       width: 8em;
+      color: white;
       padding: 1em;
+      background-color: $main_orange;
+      border: 1px solid white;
+      &:hover {
+        color: $main_blue;
+        border: 1px solid $main_blue;
+        background-color: $main_orange;
+      }
     }
   }
 }
 
-.american_league_container {
+.league_one_container {
   float: left;
   width: 45%;
-  .american_league_content {
-    width: 60%;
+  .league_one_content {
+    width: 65%;
     margin: auto;
   }
 }
 
-.national_league_container {
+.league_two_container {
   float: right;
   width: 45%;
-  .national_league_content {
-    width: 60%;
+  .league_two_content {
+    width: 65%;
     margin: auto;
   }
 }
 
-
+#baseball_container,
+#basketball_container {
+  overflow: hidden;
+  margin-bottom: 1em;
+}
 
 .form_container {
   background-color: $main_orange;

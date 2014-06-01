@@ -1,4 +1,4 @@
-<% if @all_news != [] %>
+<% if @all_news.present? %>
   <% @all_news.each do |article| %>
     <article>
       <ul>
@@ -11,5 +11,7 @@
     </article>
   <% end %>
 <% else %>
+  <div id="add_teams_text">
   <p>Please click <%= link_to "Add Teams", "/teams/new" %> to get started.</p>
+  </div>
 <% end %>
