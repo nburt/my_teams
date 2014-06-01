@@ -1,6 +1,6 @@
 <div class="team_form_container">
 <%= form_tag "/teams", :class => "team_form" do %>
-  <h2>Major League Baseball</h2>
+  <h2 id="baseball_header">Major League Baseball</h2>
 
   <div id="baseball_container">
     <div class="league_one_container">
@@ -136,7 +136,7 @@
       </div>
     </div>
   </div>
-  <h2>National Basketball Association</h2>
+  <h2 id="basketball_header">National Basketball Association</h2>
 
   <div id="basketball_container">
     <div class="league_one_container">
@@ -272,13 +272,12 @@
       </div>
     </div>
   </div>
-  <h2>National Football League</h2>
+  <h2 id="football_header">National Football League</h2>
 
   <div id="football_container">
     <div class="league_one_container">
       <div class="league_one_content">
         <h4>American Football Conference</h4>
-
         <div class="checkbox_container">
           <%= check_box_tag "football[31]" %>
           <%= label_tag "football[31]", "Baltimore Ravens" %>
@@ -323,10 +322,7 @@
           <%= check_box_tag "football[17]" %>
           <%= label_tag "football[17]", "New England Patriots" %>
         </div>
-        <div class="checkbox_container">
-          <%= check_box_tag "football[20]" %>
-          <%= label_tag "football[20]", "New York Jets" %>
-        </div>
+
         <div class="checkbox_container">
           <%= check_box_tag "football[13]" %>
           <%= label_tag "football[13]", "Oakland Raiders" %>
@@ -356,10 +352,6 @@
         <div class="checkbox_container">
           <%= check_box_tag "football[1]" %>
           <%= label_tag "football[1]", "Atlanta Falcons" %>
-        </div>
-        <div class="checkbox_container">
-          <%= check_box_tag "football[29]" %>
-          <%= label_tag "football[29]", "Carolina Panthers" %>
         </div>
         <div class="checkbox_container">
           <%= check_box_tag "football[3]" %>
@@ -413,6 +405,10 @@
           <%= check_box_tag "football[28]" %>
           <%= label_tag "football[28]", "Washington Redskins" %>
         </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "football[29]" %>
+          <%= label_tag "football[29]", "Carolina Panthers" %>
+        </div>
       </div>
     </div>
   </div>
@@ -421,3 +417,38 @@
   </div>
 <% end %>
 </div>
+
+<script>
+  var football_container = $('#football_container');
+  var basketball_container = $('#basketball_container');
+  var baseball_container = $('#baseball_container');
+  var football_header = $('#football_header');
+  var basketball_header = $('#basketball_header');
+  var baseball_header = $('#baseball_header');
+  var submit_button = $('.submit_button')
+
+  football_container.hide();
+  basketball_container.hide();
+  baseball_container.hide();
+  submit_button.hide();
+
+  football_header.click(function () {
+    football_container.toggle();
+  });
+
+  basketball_header.click(function () {
+    basketball_container.toggle();
+  });
+
+  baseball_header.click(function () {
+    baseball_container.toggle();
+  });
+
+  $('input').click(function () {
+    if ($('input:checked').length > 0) {
+      submit_button.show();
+    } else {
+      submit_button.hide();
+    }
+  });
+</script>
