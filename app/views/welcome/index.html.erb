@@ -1,11 +1,11 @@
-<% @mariners_news.each do |article| %>
+<% @all_news.each do |article| %>
   <article>
     <ul>
-      <li><%= article["headline"] %></li>
+      <li><%= article[:headline] %></li>
       <div class="article_time">
-        <li><%= time_ago_in_words(article["lastModified"]) %> ago</li>
+        <li><%= time_ago_in_words(article[:last_modified]) %> ago</li>
       </div>
     </ul>
-    <%= link_to "Read on ESPN", article["links"]["web"]["href"], :target => "_blank" %>
+    <%= link_to "Read on ESPN", article[:url], :target => "_blank" %>
   </article>
 <% end %>

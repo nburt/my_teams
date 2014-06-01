@@ -18,6 +18,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-52.mashery.com
       Server:
       - Sun GlassFish Enterprise Server v2.1
       Access-Control-Allow-Origin:
@@ -342,7 +344,7 @@ http_interactions:
         :{"athletes" :{"href" :"http://m.espn.go.com/mlb/playercard?playerId=31767&ex_cid=espnapi_public"}}}}}],"published"
         :"2014-05-23T23:12:22Z","video" :[]}]}'
     http_version: 
-  recorded_at: Sun, 01 Jun 2014 02:41:23 GMT
+  recorded_at: Sun, 01 Jun 2014 02:41:09 GMT
 - request:
     method: get
     uri: http://api.espn.com/v1/sports/basketball/nba/teams/12/news?apikey=<ESPN_API_KEY>
@@ -361,6 +363,8 @@ http_interactions:
       code: 200
       message: OK
     headers:
+      X-Mashery-Responder:
+      - prod-j-worker-atl-52.mashery.com
       Server:
       - Sun GlassFish Enterprise Server v2.1
       Access-Control-Allow-Origin:
@@ -780,5 +784,5 @@ http_interactions:
         :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
         :"s:40~l:46~t:12"}],"published" :"2014-05-29T18:59:44Z","video" :[]}]}'
     http_version: 
-  recorded_at: Sun, 01 Jun 2014 02:41:24 GMT
+  recorded_at: Sun, 01 Jun 2014 02:41:09 GMT
 recorded_with: VCR 2.9.2

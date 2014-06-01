@@ -9,4 +9,11 @@ describe EspnApi do
     end
   end
 
+  it 'can get a stream for the la clippers' do
+    VCR.use_cassette('models/clippers_news') do
+      espn_api = EspnApi.new
+      expect(espn_api.clippers[0]['headline']).to eq 'Clips sale pending board approval'
+    end
+  end
+
 end

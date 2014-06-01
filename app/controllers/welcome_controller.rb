@@ -2,7 +2,7 @@ class WelcomeController < ApplicationController
 
   def index
     espn_api = EspnApi.new
-    @mariners_news = espn_api.mariners
+    @all_news = NewsConcatenator.new(espn_api.mariners, espn_api.clippers).merge
   end
 
 end
