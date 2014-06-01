@@ -48,8 +48,9 @@ nav {
       &:first-child {
         margin-right: 12.6em;
       }
-      &:last-child:hover {
+      &:nth-child(3):hover {
         border: 1px solid white;
+        cursor: default;
       }
       &:hover {
         border: 1px solid $main_blue;
@@ -152,20 +153,20 @@ article {
   }
   .submit_button {
     width: 80%;
-    margin: auto;
     clear: both;
-    text-align: center;
+    margin: auto;
     input {
-      margin-top: 2em;
+      display: block;
+      margin: 1em auto;
       width: 8em;
-      color: white;
-      padding: 1em;
-      background-color: $main_orange;
+      background-color: white;
+      color: $main_orange;
       border: 1px solid white;
+      border-radius: 3px;
       &:hover {
-        color: $main_blue;
+        background-color: $main_blue;
+        color: white;
         border: 1px solid $main_blue;
-        background-color: $main_orange;
         cursor: pointer;
       }
     }
@@ -191,7 +192,8 @@ article {
 }
 
 #baseball_container,
-#basketball_container {
+#basketball_container,
+#football_container {
   overflow: hidden;
   margin-bottom: 1em;
 }
@@ -220,7 +222,8 @@ form {
   }
   input {
     display: block;
-    width: 15em;
+    width: 25em;
+    height: 2.25em;
     margin-bottom: 1em;
     &:last-child {
       width: 6em;
