@@ -1,0 +1,346 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.espn.com/v1/sports/baseball/mlb/teams/12/news?apikey=<ESPN_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Sun GlassFish Enterprise Server v2.1
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - ESPN API
+      Cache-Control:
+      - max-age=300
+      Date:
+      - Sun, 01 Jun 2014 01:26:44 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '28253'
+    body:
+      encoding: UTF-8
+      string: '{"timestamp" :"2014-06-01T01:26:44Z","resultsOffset" :0,"status" :"success","resultsLimit"
+        :10,"resultsCount" :379,"headlines" :[{"headline" :"Martinez, Cabrera lead
+        Detroit past Seattle 6-3","keywords" :[],"lastModified" :"2014-05-31T06:37:08Z","premium"
+        :false,"gameId" :"340530112","mobileStory" :"","links" :{"api" :{"news" :{"href"
+        :"http://api.espn.com/v1/sports/news/11011138"},"events" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/events/340530112"}},"web"
+        :{"href" :"http://scores.espn.go.com/mlb/recap?gameId=340530112&ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://scores.espn.go.com/mlb/gamecast?gameId=340530112&version=mobile&ex_cid=espnapi_public"}},"type"
+        :"Recap","related" :[],"id" :11011138,"story" :"","linkText" :"Martinez, Cabrera
+        lead Detroit past Seattle 6-3","source" :"Associated Press","description"
+        :"Martinez, Cabrera lead Detroit past Seattle 6-3","images" :[{"height" :324,"alt"
+        :"","width" :576,"name" :"Tigers Double Up Mariners","caption" :"Miguel Cabrera
+        and Victor Martinez both homered in the Tigers'' 6-3 win over the Mariners.","type"
+        :"video","url" :"http://a.espncdn.com/media/motion/2014/0531/dm_140531_mlb_tigers_mariners/dm_140531_mlb_tigers_mariners.jpg"}],"categories"
+        :[{"description" :"Seattle Mariners","type" :"team","sportId" :10,"teamId"
+        :12,"team" :{"id" :12,"description" :"Seattle Mariners","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/12"}},"web" :{"teams"
+        :{"href" :"http://espn.go.com/mlb/team/_/name/sea/seattle-mariners?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:12"},{"description" :"Detroit Tigers","type" :"team","sportId"
+        :10,"teamId" :6,"team" :{"id" :6,"description" :"Detroit Tigers","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/6"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/det/detroit-tigers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=6&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:6"},{"description" :"MLB","type" :"league","sportId" :10,"leagueId"
+        :10,"league" :{"id" :10,"description" :"MLB","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/baseball/mlb"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/mlb/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/mlb/?ex_cid=espnapi_public"}}}},"uid" :"s:1~l:10"}],"published"
+        :"2014-05-31T05:20:09Z","video" :[{"id" :11011169,"title" :"Tigers Double
+        Up Mariners","thumbnail" :"http://a.espncdn.com/media/motion/2014/0531/dm_140531_mlb_tigers_mariners/dm_140531_mlb_tigers_mariners.jpg","tracking"
+        :{"sportName" :"mlb","leagueName" :"No League","coverageType" :"Highlight","trackingName"
+        :"COM_MLB Highlight (Tigers/Mariners) 2014/05/30 ESHEET"},"description" :"Miguel
+        Cabrera and Victor Martinez both homered in the Tigers'' 6-3 win over the
+        Mariners.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=11011169&ex_cid=espnapi_public"}}},{"id"
+        :11011169,"title" :"Tigers Double Up Mariners","thumbnail" :"http://a.espncdn.com/media/motion/2014/0531/dm_140531_mlb_tigers_mariners/dm_140531_mlb_tigers_mariners.jpg","tracking"
+        :{"sportName" :"mlb","leagueName" :"No League","coverageType" :"Highlight","trackingName"
+        :"COM_MLB Highlight (Tigers/Mariners) 2014/05/30 ESHEET"},"description" :"Miguel
+        Cabrera and Victor Martinez both homered in the Tigers'' 6-3 win over the
+        Mariners.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=11011169&ex_cid=espnapi_public"}}}]},{"headline"
+        :"Robinson Cano sits with sore hand","keywords" :["hand","sore","day to day","m''s"],"lastModified"
+        :"2014-05-31T14:09:49Z","premium" :false,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11009646"}},"web" :{"href"
+        :"http://espn.go.com/mlb/story/_/id/11009646/robinson-cano-seattle-mariners-day-day-sore-hand?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/mlb/story?storyId=11009646&ex_cid=espnapi_public"}},"type"
+        :"HeadlineNews","related" :[],"id" :11009646,"story" :"","title" :"Robinson
+        Cano of Seattle Mariners day to day with sore hand","linkText" :"Cano out
+        of M''s lineup again with sore hand","source" :"Associated Press","description"
+        :"Robinson Cano is out of his second straight game for the Seattle Mariners
+        with a hand contusion.","images" :[],"categories" :[{"description" :"MLB","type"
+        :"league","sportId" :10,"leagueId" :10,"league" :{"id" :10,"description" :"MLB","links"
+        :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/mlb/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/mlb/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10"},{"description" :"Robinson Cano","type" :"athlete","sportId" :10,"athleteId"
+        :6204,"athlete" :{"id" :6204,"description" :"Robinson Cano","links" :{"api"
+        :{"athletes" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/athletes/6204"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/mlb/player/_/id/6204/robinson-cano?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/mlb/playercard?playerId=6204&ex_cid=espnapi_public"}}}}},{"description"
+        :"Seattle Mariners","type" :"team","sportId" :10,"teamId" :12,"team" :{"id"
+        :12,"description" :"Seattle Mariners","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/sea/seattle-mariners?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:12"},{"description" :"Endy Chavez","type" :"athlete","sportId"
+        :10,"athleteId" :4727,"athlete" :{"id" :4727,"description" :"Endy Chavez","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/athletes/4727"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/mlb/player/_/id/4727/endy-chavez?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/mlb/playercard?playerId=4727&ex_cid=espnapi_public"}}}}},{"description"
+        :"Brandon Maurer","type" :"athlete","sportId" :10,"athleteId" :32595,"athlete"
+        :{"id" :32595,"description" :"Brandon Maurer","links" :{"api" :{"athletes"
+        :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/athletes/32595"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/mlb/player/_/id/32595/brandon-maurer?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/mlb/playercard?playerId=32595&ex_cid=espnapi_public"}}}}},{"description"
+        :"Blake Beavan","type" :"athlete","sportId" :10,"athleteId" :31018,"athlete"
+        :{"id" :31018,"description" :"Blake Beavan","links" :{"api" :{"athletes" :{"href"
+        :"http://api.espn.com/v1/sports/baseball/mlb/athletes/31018"}},"web" :{"athletes"
+        :{"href" :"http://espn.go.com/mlb/player/_/id/31018/blake-beavan?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/mlb/playercard?playerId=31018&ex_cid=espnapi_public"}}}}}],"published"
+        :"2014-05-31T01:08:49Z","video" :[]},{"headline" :"Aybar hits 3-run homer
+        to lead Angels to win","keywords" :[],"lastModified" :"2014-05-30T06:51:48Z","premium"
+        :false,"gameId" :"340529112","mobileStory" :"","links" :{"api" :{"news" :{"href"
+        :"http://api.espn.com/v1/sports/news/11004924"},"events" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/events/340529112"}},"web"
+        :{"href" :"http://scores.espn.go.com/mlb/recap?gameId=340529112&ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://scores.espn.go.com/mlb/gamecast?gameId=340529112&version=mobile&ex_cid=espnapi_public"}},"type"
+        :"Recap","related" :[],"id" :11004924,"story" :"","linkText" :"Aybar hits
+        3-run homer to lead Angels to win","source" :"Associated Press","description"
+        :"Aybar hits 3-run homer to lead Angels to win","images" :[],"categories"
+        :[{"description" :"Seattle Mariners","type" :"team","sportId" :10,"teamId"
+        :12,"team" :{"id" :12,"description" :"Seattle Mariners","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/12"}},"web" :{"teams"
+        :{"href" :"http://espn.go.com/mlb/team/_/name/sea/seattle-mariners?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:12"},{"description" :"Los Angeles Angels","type" :"team","sportId"
+        :10,"teamId" :3,"team" :{"id" :3,"description" :"Los Angeles Angels","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/3"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/laa/los-angeles-angels?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=3&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:3"},{"description" :"MLB","type" :"league","sportId" :10,"leagueId"
+        :10,"league" :{"id" :10,"description" :"MLB","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/baseball/mlb"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/mlb/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/mlb/?ex_cid=espnapi_public"}}}},"uid" :"s:1~l:10"}],"published"
+        :"2014-05-30T05:34:45Z","video" :[]},{"headline" :"Hernandez gem leads Seattle
+        past Angels 3-1","keywords" :[],"lastModified" :"2014-05-29T06:04:46Z","premium"
+        :false,"gameId" :"340528112","mobileStory" :"","links" :{"api" :{"news" :{"href"
+        :"http://api.espn.com/v1/sports/news/10999528"},"events" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/events/340528112"}},"web"
+        :{"href" :"http://scores.espn.go.com/mlb/recap?gameId=340528112&ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://scores.espn.go.com/mlb/gamecast?gameId=340528112&version=mobile&ex_cid=espnapi_public"}},"type"
+        :"Recap","related" :[],"id" :10999528,"story" :"","linkText" :"Hernandez gem
+        leads Seattle past Angels 3-1","source" :"Associated Press","description"
+        :"Hernandez gem leads Seattle past Angels 3-1","images" :[],"categories" :[{"description"
+        :"Seattle Mariners","type" :"team","sportId" :10,"teamId" :12,"team" :{"id"
+        :12,"description" :"Seattle Mariners","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/sea/seattle-mariners?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:12"},{"description" :"Los Angeles Angels","type" :"team","sportId"
+        :10,"teamId" :3,"team" :{"id" :3,"description" :"Los Angeles Angels","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/3"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/laa/los-angeles-angels?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=3&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:3"},{"description" :"MLB","type" :"league","sportId" :10,"leagueId"
+        :10,"league" :{"id" :10,"description" :"MLB","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/baseball/mlb"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/mlb/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/mlb/?ex_cid=espnapi_public"}}}},"uid" :"s:1~l:10"}],"published"
+        :"2014-05-29T04:50:50Z","video" :[]},{"headline" :"Mariners sign Xavier Nady","keywords"
+        :["signing","deal","contract","minor league deal"],"lastModified" :"2014-05-28T23:04:41Z","premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10997759"}},"web"
+        :{"href" :"http://espn.go.com/mlb/story/_/id/10997759/seattle-mariners-add-xavier-nady-minor-league-deal?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/mlb/story?storyId=10997759&ex_cid=espnapi_public"}},"type"
+        :"HeadlineNews","related" :[],"id" :10997759,"story" :"","title" :"Seattle
+        Mariners add Xavier Nady with minor league deal","linkText" :"Mariners add
+        Nady with minor league deal","source" :"Associated Press","description" :"Outfielder
+        Xavier Nady has signed a minor league contract with the Seattle Mariners after
+        being released by San Diego earlier this month.","images" :[],"categories"
+        :[{"description" :"MLB","type" :"league","sportId" :10,"leagueId" :10,"league"
+        :{"id" :10,"description" :"MLB","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/mlb/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/mlb/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10"},{"description" :"Xavier Nady","type" :"athlete","sportId" :10,"athleteId"
+        :4564,"athlete" :{"id" :4564,"description" :"Xavier Nady","links" :{"api"
+        :{"athletes" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/athletes/4564"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/mlb/player/_/id/4564/xavier-nady?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/mlb/playercard?playerId=4564&ex_cid=espnapi_public"}}}}},{"description"
+        :"San Diego Padres","type" :"team","sportId" :10,"teamId" :25,"team" :{"id"
+        :25,"description" :"San Diego Padres","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/25"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/sd/san-diego-padres?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=25&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:25"},{"description" :"Seattle Mariners","type" :"team","sportId"
+        :10,"teamId" :12,"team" :{"id" :12,"description" :"Seattle Mariners","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/sea/seattle-mariners?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:12"},{"description" :"Chicago Cubs","type" :"team","sportId"
+        :10,"teamId" :16,"team" :{"id" :16,"description" :"Chicago Cubs","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/16"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/chc/chicago-cubs?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=16&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:16"}],"published" :"2014-05-28T22:38:42Z","video" :[]},{"headline"
+        :"Weaver continues hot streak as Angels win 6-4","keywords" :[],"lastModified"
+        :"2014-05-28T06:28:17Z","premium" :false,"gameId" :"340527112","mobileStory"
+        :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10993883"},"events"
+        :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/events/340527112"}},"web"
+        :{"href" :"http://scores.espn.go.com/mlb/recap?gameId=340527112&ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://scores.espn.go.com/mlb/gamecast?gameId=340527112&version=mobile&ex_cid=espnapi_public"}},"type"
+        :"Recap","related" :[],"id" :10993883,"story" :"","linkText" :"Weaver continues
+        hot streak as Angels win 6-4","source" :"Associated Press","description" :"Weaver
+        continues hot streak as Angels win 6-4","images" :[],"categories" :[{"description"
+        :"Seattle Mariners","type" :"team","sportId" :10,"teamId" :12,"team" :{"id"
+        :12,"description" :"Seattle Mariners","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/sea/seattle-mariners?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:12"},{"description" :"Los Angeles Angels","type" :"team","sportId"
+        :10,"teamId" :3,"team" :{"id" :3,"description" :"Los Angeles Angels","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/3"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/laa/los-angeles-angels?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=3&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:3"},{"description" :"MLB","type" :"league","sportId" :10,"leagueId"
+        :10,"league" :{"id" :10,"description" :"MLB","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/baseball/mlb"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/mlb/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/mlb/?ex_cid=espnapi_public"}}}},"uid" :"s:1~l:10"}],"published"
+        :"2014-05-28T05:20:44Z","video" :[]},{"headline" :"Young, Cano lead Seattle
+        past Angels 5-1","keywords" :[],"lastModified" :"2014-05-27T00:28:48Z","premium"
+        :false,"gameId" :"340526112","mobileStory" :"","links" :{"api" :{"news" :{"href"
+        :"http://api.espn.com/v1/sports/news/10987252"},"events" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/events/340526112"}},"web"
+        :{"href" :"http://scores.espn.go.com/mlb/recap?gameId=340526112&ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://scores.espn.go.com/mlb/gamecast?gameId=340526112&version=mobile&ex_cid=espnapi_public"}},"type"
+        :"Recap","related" :[],"id" :10987252,"story" :"","linkText" :"Young, Cano
+        lead Seattle past Angels 5-1","source" :"Associated Press","description" :"Young,
+        Cano lead Seattle past Angels 5-1","images" :[],"categories" :[{"description"
+        :"Seattle Mariners","type" :"team","sportId" :10,"teamId" :12,"team" :{"id"
+        :12,"description" :"Seattle Mariners","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/sea/seattle-mariners?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:12"},{"description" :"Los Angeles Angels","type" :"team","sportId"
+        :10,"teamId" :3,"team" :{"id" :3,"description" :"Los Angeles Angels","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/3"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/laa/los-angeles-angels?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=3&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:3"},{"description" :"MLB","type" :"league","sportId" :10,"leagueId"
+        :10,"league" :{"id" :10,"description" :"MLB","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/baseball/mlb"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/mlb/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/mlb/?ex_cid=espnapi_public"}}}},"uid" :"s:1~l:10"}],"published"
+        :"2014-05-26T23:02:08Z","video" :[]},{"headline" :"George Springer''s first
+        career multihomer game leads Astros","keywords" :[],"lastModified" :"2014-05-25T07:28:17Z","premium"
+        :false,"gameId" :"340524112","mobileStory" :"","links" :{"api" :{"news" :{"href"
+        :"http://api.espn.com/v1/sports/news/10981671"},"events" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/events/340524112"}},"web"
+        :{"href" :"http://scores.espn.go.com/mlb/recap?gameId=340524112&ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://scores.espn.go.com/mlb/gamecast?gameId=340524112&version=mobile&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Springer''s 2 HR, 5 RBI propel Astros past M''s ","type" :"Recap","related"
+        :[],"id" :10981671,"story" :"","linkText" :"Springer''s 2 HR, 5 RBI propel
+        Astros past M''s","source" :"Associated Press","description" :"George Springer
+        hit a pair of two-run homers and Brett Oberholtzer scattered six hits over
+        six innings in the Houston Astros'' 9-4 victory over the Seattle Mariners
+        on Saturday night.","images" :[],"categories" :[{"description" :"Seattle Mariners","type"
+        :"team","sportId" :10,"teamId" :12,"team" :{"id" :12,"description" :"Seattle
+        Mariners","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/sea/seattle-mariners?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:12"},{"description" :"Houston Astros","type" :"team","sportId"
+        :10,"teamId" :18,"team" :{"id" :18,"description" :"Houston Astros","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/hou/houston-astros?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:18"},{"description" :"MLB","type" :"league","sportId" :10,"leagueId"
+        :10,"league" :{"id" :10,"description" :"MLB","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/baseball/mlb"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/mlb/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/mlb/?ex_cid=espnapi_public"}}}},"uid" :"s:1~l:10"}],"published"
+        :"2014-05-25T05:47:28Z","video" :[]},{"headline" :"King Felix wins 3rd straight,
+        Mariners top Astros","keywords" :[],"lastModified" :"2014-05-24T06:05:12Z","premium"
+        :false,"gameId" :"340523112","mobileStory" :"","links" :{"api" :{"news" :{"href"
+        :"http://api.espn.com/v1/sports/news/10977602"},"events" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/events/340523112"}},"web"
+        :{"href" :"http://scores.espn.go.com/mlb/recap?gameId=340523112&ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://scores.espn.go.com/mlb/gamecast?gameId=340523112&version=mobile&ex_cid=espnapi_public"}},"type"
+        :"Recap","related" :[],"id" :10977602,"story" :"","linkText" :"King Felix
+        wins 3rd straight, Mariners top Astros","source" :"Associated Press","description"
+        :"King Felix wins 3rd straight, Mariners top Astros","images" :[{"height"
+        :324,"alt" :"","width" :576,"name" :"King Felix, M''s Shut Down Astros","caption"
+        :"Felix Hernandez struck out nine over eight dominant innings and the Mariners
+        defeated the Astros 6-1.","type" :"video","url" :"http://a.espncdn.com/media/motion/2014/0524/dm_140524_Astros_Mariners_Highlight/dm_140524_Astros_Mariners_Highlight.jpg"}],"categories"
+        :[{"description" :"Seattle Mariners","type" :"team","sportId" :10,"teamId"
+        :12,"team" :{"id" :12,"description" :"Seattle Mariners","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/12"}},"web" :{"teams"
+        :{"href" :"http://espn.go.com/mlb/team/_/name/sea/seattle-mariners?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:12"},{"description" :"Houston Astros","type" :"team","sportId"
+        :10,"teamId" :18,"team" :{"id" :18,"description" :"Houston Astros","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/hou/houston-astros?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:18"},{"description" :"MLB","type" :"league","sportId" :10,"leagueId"
+        :10,"league" :{"id" :10,"description" :"MLB","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/baseball/mlb"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/mlb/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/mlb/?ex_cid=espnapi_public"}}}},"uid" :"s:1~l:10"}],"published"
+        :"2014-05-24T04:56:22Z","video" :[{"id" :10977659,"title" :"King Felix, M''s
+        Shut Down Astros","thumbnail" :"http://a.espncdn.com/media/motion/2014/0524/dm_140524_Astros_Mariners_Highlight/dm_140524_Astros_Mariners_Highlight.jpg","tracking"
+        :{"sportName" :"mlb","leagueName" :"No League","coverageType" :"Highlight","trackingName"
+        :"COM_MLB Highlight (Astros/Mariners) 2014/5/23 ESHEET "},"description" :"Felix
+        Hernandez struck out nine over eight dominant innings and the Mariners defeated
+        the Astros 6-1.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=10977659&ex_cid=espnapi_public"}}},{"id"
+        :10977659,"title" :"King Felix, M''s Shut Down Astros","thumbnail" :"http://a.espncdn.com/media/motion/2014/0524/dm_140524_Astros_Mariners_Highlight/dm_140524_Astros_Mariners_Highlight.jpg","tracking"
+        :{"sportName" :"mlb","leagueName" :"No League","coverageType" :"Highlight","trackingName"
+        :"COM_MLB Highlight (Astros/Mariners) 2014/5/23 ESHEET "},"description" :"Felix
+        Hernandez struck out nine over eight dominant innings and the Mariners defeated
+        the Astros 6-1.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=10977659&ex_cid=espnapi_public"}}}]},{"headline"
+        :"Astros scratch Brad Peacock","keywords" :["scratch","forearm"],"lastModified"
+        :"2014-05-23T23:28:34Z","premium" :false,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10976034"}},"web" :{"href"
+        :"http://espn.go.com/mlb/story/_/id/10976034/houston-astros-scratch-brad-peacock-sore-forearm?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/mlb/story?storyId=10976034&ex_cid=espnapi_public"}},"type"
+        :"HeadlineNews","related" :[],"id" :10976034,"story" :"","title" :"Houston
+        Astros scratch Brad Peacock with sore forearm","linkText" :"Astros scratch
+        Peacock with sore forearm","source" :"Associated Press","description" :"Houston
+        Astros right-hander Brad Peacock has been scratched from his scheduled start
+        against the Seattle Mariners after experiencing stiffness in his forearm.","images"
+        :[],"categories" :[{"description" :"MLB","type" :"league","sportId" :10,"leagueId"
+        :10,"league" :{"id" :10,"description" :"MLB","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/baseball/mlb"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/mlb/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/mlb/?ex_cid=espnapi_public"}}}},"uid" :"s:1~l:10"},{"description"
+        :"Houston Astros","type" :"team","sportId" :10,"teamId" :18,"team" :{"id"
+        :18,"description" :"Houston Astros","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/18"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/hou/houston-astros?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=18&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:18"},{"description" :"Brad Peacock","type" :"athlete","sportId"
+        :10,"athleteId" :31591,"athlete" :{"id" :31591,"description" :"Brad Peacock","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/athletes/31591"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/mlb/player/_/id/31591/brad-peacock?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/mlb/playercard?playerId=31591&ex_cid=espnapi_public"}}}}},{"description"
+        :"Seattle Mariners","type" :"team","sportId" :10,"teamId" :12,"team" :{"id"
+        :12,"description" :"Seattle Mariners","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/teams/12"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/mlb/team/_/name/sea/seattle-mariners?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/mlb/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
+        :"s:1~l:10~t:12"},{"description" :"Rudy Owens","type" :"athlete","sportId"
+        :10,"athleteId" :31072,"athlete" :{"id" :31072,"description" :"Rudy Owens","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb/athletes/31072"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/mlb/player/_/id/31072/rudy-owens?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/mlb/playercard?playerId=31072&ex_cid=espnapi_public"}}}}},{"description"
+        :"Josh Zeid","type" :"athlete","sportId" :10,"athleteId" :31767,"athlete"
+        :{"id" :31767,"description" :"Josh Zeid","links" :{"api" :{"athletes" :{"href"
+        :"http://api.espn.com/v1/sports/baseball/mlb/athletes/31767"}},"web" :{"athletes"
+        :{"href" :"http://espn.go.com/mlb/player/_/id/31767/josh-zeid?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/mlb/playercard?playerId=31767&ex_cid=espnapi_public"}}}}}],"published"
+        :"2014-05-23T23:12:22Z","video" :[]}]}'
+    http_version: 
+  recorded_at: Sun, 01 Jun 2014 01:30:53 GMT
+recorded_with: VCR 2.9.2

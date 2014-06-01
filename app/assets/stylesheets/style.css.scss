@@ -1,7 +1,11 @@
+/* variables */
+
+$main_orange: #FF9A53;
+
 /* header and navbar */
 
 header {
-  background-color: #FF9A53;
+  background-color: $main_orange;
   overflow: hidden;
 }
 
@@ -13,5 +17,39 @@ nav {
   font-weight: bold;
   ul {
     list-style: none;
+  }
+}
+
+/* articles */
+
+main {
+  background-color: #CDECFF;
+  padding: 3em 10em;
+  font-size: 1.25em;
+}
+
+.article_time {
+  float: right;
+  li {
+    text-align: left;
+    color: $main_orange;
+    width: 160px;
+  }
+}
+
+article {
+  margin-bottom: 1.5em;
+  ul {
+    margin-bottom: .5em;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    color: $main_orange;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

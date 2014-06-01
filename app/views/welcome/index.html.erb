@@ -1,0 +1,11 @@
+<% @mariners_news.each do |article| %>
+  <article>
+    <ul>
+      <li><%= article["headline"] %></li>
+      <div class="article_time">
+        <li><%= time_ago_in_words(article["lastModified"]) %> ago</li>
+      </div>
+    </ul>
+    <%= link_to "Read on ESPN", article["links"]["web"]["href"], :target => "_blank" %>
+  </article>
+<% end %>
