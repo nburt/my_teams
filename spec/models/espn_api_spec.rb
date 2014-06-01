@@ -2,10 +2,10 @@ require 'spec_helper'
 
 describe EspnApi do
 
-  it 'can get a stream for the seattle mariners' do
+  it 'can get a stream for baseball' do
     VCR.use_cassette('models/mariners_news') do
       espn_api = EspnApi.new
-      expect(espn_api.mariners[0]['headline']).to eq 'Martinez, Cabrera lead Detroit past Seattle 6-3'
+      expect(espn_api.baseball(12).flatten[0]["headline"]).to eq 'Martinez, Cabrera lead Detroit past Seattle 6-3'
     end
   end
 

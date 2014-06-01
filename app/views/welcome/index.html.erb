@@ -1,29 +1,15 @@
-<% if @all_news != nil %>
-  <% @all_news.each do |article| %>
-    <article>
-      <ul>
-        <li><%= article[:headline] %></li>
-        <div class="article_time">
-          <li><%= time_ago_in_words(article[:last_modified]) %> ago</li>
-        </div>
-      </ul>
-      <%= link_to "Read on ESPN", article[:url], :target => "_blank" %>
-    </article>
+<div class="form_container">
+  <h1>Register</h1>
+  <% if @user.errors.present? %>
+    <% @user.errors.full_messages.each do |message| %>
+      <p><%= message %></p>
+    <% end %>
   <% end %>
-<% else %>
-  <div class="form_container">
-    <h1>Register</h1>
-    <% if @user.errors.present? %>
-      <% @user.errors.full_messages.each do |message| %>
-        <p><%= message %></p>
-      <% end %>
-    <% end %>
-    <%= form_for @user, :url => {:controller => "registrations", :action => "create"} do |f| %>
-      <%= f.label :email, :autofocus => true %>
-      <%= f.email_field :email %>
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-      <%= f.submit "Register" %>
-    <% end %>
-  </div>
-<% end %>
+  <%= form_for @user, :url => {:controller => "registrations", :action => "create"} do |f| %>
+    <%= f.label :email, :autofocus => true %>
+    <%= f.email_field :email %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.submit "Register" %>
+  <% end %>
+</div>

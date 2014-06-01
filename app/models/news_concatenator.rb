@@ -1,39 +1,48 @@
 class NewsConcatenator
 
-  def initialize(mariners_data, clippers_data, chargers_data)
-    @mariners_data = mariners_data
-    @clippers_data = clippers_data
-    @chargers_data = chargers_data
+  def initialize(baseball_data, basketball_data = nil, football_data = nil)
+    @baseball_data = baseball_data
+    @basketball_data = basketball_data
+    @football_data = football_data
   end
 
   def merge
     all_articles = []
-    @clippers_data.each do |article|
-      clippers_hash = create_news_hash(article)
-      all_articles << clippers_hash if clippers_hash.present?
+
+    if @basketball_data != nil
+      @basketball_data.each do |articles|
+        clippers_hash = create_news_hash(articles)
+        all_articles << clippers_hash if clippers_hash.present?
+      end
     end
 
-    @mariners_data.each do |article|
-      mariners_hash = create_news_hash(article)
-      all_articles << mariners_hash if mariners_hash.present?
+    if @baseball_data != nil
+      @baseball_data.each do |articles|
+        mariners_hash = create_news_hash(articles)
+        all_articles << mariners_hash if mariners_hash.present?
+      end
     end
 
-    @chargers_data.each do |article|
-      chargers_hash = create_news_hash(article)
-      all_articles << chargers_hash if chargers_hash.present?
+    if @football_data != nil
+      @football_data.each do |articles|
+        chargers_hash = create_news_hash(articles)
+        all_articles << chargers_hash if chargers_hash.present?
+      end
     end
 
-    all_articles.sort_by { |article| article[:last_modified] }.reverse
+    all_articles.flatten.sort_by { |article| article[:last_modified] }.reverse
   end
 
   private
 
-  def create_news_hash(article)
-    {
-      :headline => article["headline"],
-      :url => article["links"]["web"]["href"],
-      :last_modified => "#{Time.parse(article["lastModified"])}",
-    }
+  def create_news_hash(articles)
+    articles.map do |article|
+      {
+        :headline => article["headline"],
+        :url => article["links"]["web"]["href"],
+        :last_modified => "#{Time.parse(article["lastModified"])}",
+      }
+    end
   end
 
 end

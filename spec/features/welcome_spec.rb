@@ -35,6 +35,7 @@ feature 'visiting the homepage' do
   end
 
   scenario 'displays mariners headlines on homepage' do
+    pending
     VCR.use_cassette('features/mariners_news') do
       expect(page).to have_content 'Martinez, Cabrera lead Detroit past Seattle 6-3'
       expect(page).to have_link 'Read on ESPN'
@@ -42,16 +43,29 @@ feature 'visiting the homepage' do
   end
 
   scenario 'displays clippers headlines on homepage' do
+    pending
     VCR.use_cassette('features/clippers_news') do
-      visit '/'
       expect(page).to have_content 'Clips sale pending board approval'
     end
   end
 
   scenario 'displays chargers headlines on homepage' do
+    pending
     VCR.use_cassette('features/chargers_news') do
-      visit '/'
       expect(page).to have_content 'Shawne Merriman joins WWE'
+    end
+  end
+
+  scenario 'a user can select the baseball team that they want to join' do
+    VCR.use_cassette('features/baseball_select') do
+      within 'header' do
+        click_link 'Add Teams'
+      end
+      check '18'
+      check '12'
+      click_button 'Add Teams'
+      expect(page).to have_content 'Nelson Cruz hits MLB-best 20th HR as O\'s halt Astros\' win streak'
+      expect(page).to have_content 'Martinez, Cabrera lead Detroit past Seattle 6-3'
     end
   end
 

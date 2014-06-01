@@ -1,0 +1,141 @@
+<div class="team_form_container">
+  <%= form_tag "/teams", :class => "team_form" do %>
+    <h2>Major League Baseball</h2>
+
+    <div class="american_league_container">
+      <div class="american_league_content">
+        <h4>American League</h4>
+
+        <div class="checkbox_container">
+          <%= check_box_tag "1" %>
+          <%= label_tag :baltimore_orioles, "Baltimore Orioles" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "2" %>
+          <%= label_tag :boston_red_sox, "Boston Red Sox" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "4" %>
+          <%= label_tag :chicago_white_sox, "Chicago White Sox" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "5" %>
+          <%= label_tag :cleveland_indians, "Cleveland Indians" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "6" %>
+          <%= label_tag :detroit_tigers, "Detroit Tigers" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "18" %>
+          <%= label_tag :houston_astros, "Houston Astros" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "7" %>
+          <%= label_tag :kansas_city_royals, "Kansas City Royals" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "3" %>
+          <%= label_tag :los_angeles_angels, "Los Angeles Angels" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "9" %>
+          <%= label_tag :minnesota_twins, "Minnesota Twins" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "10" %>
+          <%= label_tag :new_york_yankees, "New York Yankees" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "11" %>
+          <%= label_tag :oakland_athletics, "Oakland Athletics" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "12" %>
+          <%= label_tag :seattle_mariners, "Seattle Mariners" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "30" %>
+          <%= label_tag :tampa_bay_rays, "Tampa Bay Rays" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "13" %>
+          <%= label_tag :texas_rangers, "Texas Rangers" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag :"14" %>
+          <%= label_tag :toronto_blue_jays, "Toronto Blue Jays" %>
+        </div>
+      </div>
+    </div>
+    <div class="national_league_container">
+      <div class="national_league_content">
+        <h4>National League</h4>
+
+        <div class="checkbox_container">
+          <%= check_box_tag "29" %>
+          <%= label_tag :arizona_diamondbacks, "Arizona Diamondbacks" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "15" %>
+          <%= label_tag :atlanta_braves, "Atlanta Braves" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "16" %>
+          <%= label_tag :chicago_cubs, "Chicago Cubs" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "17" %>
+          <%= label_tag :cincinnati_reds, "Cincinnati Reds" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "27" %>
+          <%= label_tag :colorado_rockies, "Colorado Rockies" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "19" %>
+          <%= label_tag :los_angeles_dodgers, "Los Angeles Dodgers" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "28" %>
+          <%= label_tag :miami_marlins, "Miami Marlins" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "8" %>
+          <%= label_tag :milwaukee_brewers, "Milwaukee Brewers" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "21" %>
+          <%= label_tag :new_york_mets, "New York Mets" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag :"23" %>
+          <%= label_tag :pittsburgh_pirates, "Pittsburgh Pirates" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "22" %>
+          <%= label_tag :philadelphia_phillies, "Philadelphia Phillies" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "25" %>
+          <%= label_tag :san_diego_padres, "San Diego Padres" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "26" %>
+          <%= label_tag :san_francisco_giants, "San Francisco Giants" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "24" %>
+          <%= label_tag :st_louis_cardinals, "St. Louis Cardinals" %>
+        </div>
+        <div class="checkbox_container">
+          <%= check_box_tag "20" %>
+          <%= label_tag :washington_nationals, "Washington Nationals" %>
+        </div>
+      </div>
+    </div>
+    <div class="submit_button">
+      <%= submit_tag "Add Teams" %>
+    </div>
+  <% end %>
+</div>
