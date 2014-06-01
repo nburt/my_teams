@@ -33,11 +33,12 @@ main {
   li {
     text-align: left;
     color: $main_orange;
-    width: 160px;
   }
 }
 
 article {
+  background-color: white;
+  padding: 1em;
   margin-bottom: 1.5em;
   ul {
     margin-bottom: .5em;
