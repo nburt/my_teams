@@ -16,4 +16,11 @@ describe EspnApi do
     end
   end
 
+  it 'can get a stream for the san diego chargers' do
+    VCR.use_cassette('models/chargers_news') do
+      espn_api = EspnApi.new
+      expect(espn_api.chargers[0]['headline']).to eq 'Malcom Floyd cleared for contact'
+    end
+  end
+
 end

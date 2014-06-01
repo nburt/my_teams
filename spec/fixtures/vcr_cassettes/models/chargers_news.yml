@@ -1,0 +1,448 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.espn.com/v1/sports/football/nfl/teams/24/news?apikey=<ESPN_API_KEY>
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Sun GlassFish Enterprise Server v2.1
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Powered-By:
+      - ESPN API
+      Cache-Control:
+      - max-age=300
+      Date:
+      - Sun, 01 Jun 2014 03:09:04 GMT
+      Content-Type:
+      - application/json;charset=UTF-8
+      Content-Length:
+      - '37418'
+    body:
+      encoding: UTF-8
+      string: '{"timestamp" :"2014-06-01T03:09:04Z","resultsOffset" :0,"status" :"success","resultsLimit"
+        :10,"resultsCount" :386,"headlines" :[{"headline" :"Malcom Floyd cleared for
+        contact","keywords" :["ER","receiver","OTA"],"lastModified" :"2014-05-28T13:48:14Z","premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10992229"}},"web"
+        :{"href" :"http://espn.go.com/nfl/story/_/id/10992229/san-diego-chargers-wr-malcom-floyd-cleared-contact?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10992229&ex_cid=espnapi_public"}},"type"
+        :"HeadlineNews","related" :[],"id" :10992229,"story" :"","title" :"San Diego
+        Chargers WR Malcom Floyd cleared for contact","linkText" :"Chargers'' Floyd
+        (neck) cleared for contact","byline" :"Eric D. Williams","source" :"ESPN.com","description"
+        :"Chargers wide receiver Malcom Floyd says he has been cleared for contact
+        after missing most of last season following a scary neck injury.","images"
+        :[{"height" :300,"alt" :"Malcolm Floyd","width" :300,"name" :"Floyd_Malcolm
+        140527 [300x300]","caption" :"Chargers wide receiver Malcom Floyd says he
+        has been cleared for contact after missing most of last season following a
+        scary neck injury.","type" :"inline","credit" :"Jeff Gross/Getty Images","url"
+        :"http://a.espncdn.com/photo/2014/0527/ncf_g_mfts_300x300.jpg"}],"categories"
+        :[{"description" :"NFL","type" :"league","sportId" :28,"leagueId" :28,"league"
+        :{"id" :28,"description" :"NFL","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/football/nfl"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nfl/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nfl/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28"},{"description" :"San Diego Chargers","type" :"team","sportId"
+        :28,"teamId" :24,"team" :{"id" :24,"description" :"San Diego Chargers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/24"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=24&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:24"},{"description" :"Malcom Floyd","type" :"athlete","sportId"
+        :28,"athleteId" :6016,"athlete" :{"id" :6016,"description" :"Malcom Floyd","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/6016"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/6016/malcom-floyd?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=6016&ex_cid=espnapi_public"}}}}},{"type"
+        :"topic","sportId" :0,"topicId" :49}],"published" :"2014-05-27T23:19:46Z","video"
+        :[]},{"headline" :"Giants, Lions open MNF schedule","keywords" :["Monday Night
+        Football","MNF","NFL schedule","schedule","matchups","games"],"lastModified"
+        :"2014-04-24T14:24:01Z","premium" :false,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10829728"}},"web" :{"href"
+        :"http://espn.go.com/nfl/story/_/id/10829728/2014-monday-night-football-schedule-revealed?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10829728&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Giants, Lions kick off MNF twinbill ","type" :"HeadlineNews","related" :[],"id"
+        :10829728,"story" :"","title" :"2014 Monday Night Football schedule revealed","linkText"
+        :"Giants-Lions, Chargers-Cards to open MNF","byline" :"Jeff Legwold","source"
+        :"ESPN.com","description" :"ESPN''s 2014 Monday Night Football slate will
+        open in Detroit and Glendale, Ariz., for the season-opening Sept. 8 doubleheader
+        as 26 of the league''s 32 teams will make an appearance on MNF.","images"
+        :[{"height" :324,"alt" :"","width" :576,"name" :"Monday Night Football September
+        Schedule Preview","caption" :"Tim Hasselbeck breaks down the big matchups
+        in September on Monday Night Football.","type" :"video","url" :"http://a.espncdn.com/media/motion/2014/0423/dm_140423_nfl_mnf_schedule/dm_140423_nfl_mnf_schedule.jpg"},{"height"
+        :324,"alt" :"Giants/Lions","width" :576,"name" :"Giants Lions 131222 [576x324]","type"
+        :"inline","credit" :"AP Photo/Paul Sancya","url" :"http://a.espncdn.com/photo/2013/1222/ny_a_lionsts_576x324.jpg"}],"categories"
+        :[{"description" :"NFL","type" :"league","sportId" :28,"leagueId" :28,"league"
+        :{"id" :28,"description" :"NFL","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/football/nfl"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nfl/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nfl/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28"},{"description" :"Arizona Cardinals","type" :"team","sportId"
+        :28,"teamId" :22,"team" :{"id" :22,"description" :"Arizona Cardinals","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/22"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/ari/arizona-cardinals?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=22&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:22"},{"description" :"Detroit Lions","type" :"team","sportId"
+        :28,"teamId" :8,"team" :{"id" :8,"description" :"Detroit Lions","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/8"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/det/detroit-lions?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=8&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:8"},{"description" :"San Diego Chargers","type" :"team","sportId"
+        :28,"teamId" :24,"team" :{"id" :24,"description" :"San Diego Chargers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/24"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=24&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:24"},{"description" :"New York Giants","type" :"team","sportId"
+        :28,"teamId" :19,"team" :{"id" :19,"description" :"New York Giants","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/19"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/nyg/new-york-giants?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=19&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:19"}],"published" :"2014-04-23T22:44:37Z","video" :[{"id" :10830289,"title"
+        :"Monday Night Football September Schedule Preview","thumbnail" :"http://a.espncdn.com/media/motion/2014/0423/dm_140423_nfl_mnf_schedule/dm_140423_nfl_mnf_schedule.jpg","tracking"
+        :{"sportName" :"nfl","leagueName" :"No League","coverageType" :"Highlight","trackingName"
+        :"COM_NFL News (Monday Night Football September Schedule Preview) 2014/04/23"},"description"
+        :"Tim Hasselbeck breaks down the big matchups in September on Monday Night
+        Football.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=10830289&ex_cid=espnapi_public"}}},{"id"
+        :10831950,"title" :"NFL Games To Watch","thumbnail" :"http://a.espncdn.com/media/motion/2014/0424/dm_140424_nfl_special_schedule_games_watch_reunion/dm_140424_nfl_special_schedule_games_watch_reunion.jpg","tracking"
+        :{"sportName" :"nfl","leagueName" :"No League","coverageType" :"Analysis","trackingName"
+        :"COM_NFL Feature (NFL Games To Watch/Reunion Games) 2014/04/24 NFL Live CC"},"description"
+        :"Tim Hasselbeck, Jerome Bettis and Ryan Clark discuss which games they are
+        most looking forward to watching this season and which reunion games they
+        most want to see this year.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=10831950&ex_cid=espnapi_public"}}}]},{"headline"
+        :"J.J. Watt has option exercised","keywords" :["option","exercise","fifth
+        year"],"lastModified" :"2014-04-18T16:36:48Z","premium" :false,"mobileStory"
+        :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10800166"}},"web"
+        :{"href" :"http://espn.go.com/nfl/story/_/id/10800166/houston-texans-exercise-fifth-year-option-jj-watt-contract?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10800166&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Source: Watt has option exercised ","type" :"HeadlineNews","related" :[{"id"
+        :10800468,"title" :"Ganguli: Extension should be next for Watt","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10800468"}},"web" :{"href"
+        :"http://espn.go.com/blog/houston-texans/post/_/id/5060/contract-extension-should-be-next-for-watt?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10800468&ex_cid=espnapi_public"}}}],"id"
+        :10800166,"story" :"","title" :"Houston Texans exercise fifth-year option
+        on J.J. Watt''s contract","linkText" :"Source: Watt has 5th-year option exercised","byline"
+        :"Field Yates","source" :"ESPNBoston.com","description" :"The Houston Texans
+        have officially exercised the fifth-year option on DE J.J. Watt''s contract
+        for the 2015 season, per a league source.","images" :[{"height" :200,"alt"
+        :"J.J. Watt","width" :300,"name" :"Watt_JJ 140417 [300x200]","caption" :"The
+        Texans have exercised the fifth-year option on star defensive end J.J. Watt''s
+        contract for the 2015 season, a league source said. ","type" :"inline","credit"
+        :"AP Photo/TUSP/Jay Biggerstaff","url" :"http://a.espncdn.com/photo/2014/0417/nfl_a_jj-watt_mb_300x200.jpg"}],"categories"
+        :[{"description" :"NFL","type" :"league","sportId" :28,"leagueId" :28,"league"
+        :{"id" :28,"description" :"NFL","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/football/nfl"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nfl/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nfl/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28"},{"description" :"Houston Texans","type" :"team","sportId" :28,"teamId"
+        :34,"team" :{"id" :34,"description" :"Houston Texans","links" :{"api" :{"teams"
+        :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/34"}},"web" :{"teams"
+        :{"href" :"http://espn.go.com/nfl/team/_/name/hou/houston-texans?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=34&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:34"},{"description" :"J.J. Watt","type" :"athlete","sportId"
+        :28,"athleteId" :13979,"athlete" :{"id" :13979,"description" :"J.J. Watt","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/13979"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/13979/j.j.-watt?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=13979&ex_cid=espnapi_public"}}}}},{"description"
+        :"San Diego Chargers","type" :"team","sportId" :28,"teamId" :24,"team" :{"id"
+        :24,"description" :"San Diego Chargers","links" :{"api" :{"teams" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl/teams/24"}},"web" :{"teams" :{"href"
+        :"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=24&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:24"},{"description" :"Corey Liuget","type" :"athlete","sportId"
+        :28,"athleteId" :13989,"athlete" :{"id" :13989,"description" :"Corey Liuget","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/13989"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/13989/corey-liuget?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=13989&ex_cid=espnapi_public"}}}}},{"description"
+        :"Baltimore Ravens","type" :"team","sportId" :28,"teamId" :33,"team" :{"id"
+        :33,"description" :"Baltimore Ravens","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/33"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/bal/baltimore-ravens?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=33&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:33"},{"description" :"Jimmy Smith","type" :"athlete","sportId"
+        :28,"athleteId" :13963,"athlete" :{"id" :13963,"description" :"Jimmy Smith","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/13963"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/13963/jimmy-smith?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=13963&ex_cid=espnapi_public"}}}}},{"description"
+        :"New York Jets","type" :"team","sportId" :28,"teamId" :20,"team" :{"id" :20,"description"
+        :"New York Jets","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/20"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/nyj/new-york-jets?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=20&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:20"},{"description" :"Muhammad Wilkerson","type" :"athlete","sportId"
+        :28,"athleteId" :13985,"athlete" :{"id" :13985,"description" :"Muhammad Wilkerson","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/13985"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/13985/muhammad-wilkerson?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=13985&ex_cid=espnapi_public"}}}}},{"description"
+        :"Carolina Panthers","type" :"team","sportId" :28,"teamId" :29,"team" :{"id"
+        :29,"description" :"Carolina Panthers","links" :{"api" :{"teams" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl/teams/29"}},"web" :{"teams" :{"href"
+        :"http://espn.go.com/nfl/team/_/name/car/carolina-panthers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=29&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:29"},{"description" :"Cam Newton","type" :"athlete","sportId"
+        :28,"athleteId" :13994,"athlete" :{"id" :13994,"description" :"Cam Newton","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/13994"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/13994/cam-newton?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=13994&ex_cid=espnapi_public"}}}}},{"description"
+        :"Detroit Lions","type" :"team","sportId" :28,"teamId" :8,"team" :{"id" :8,"description"
+        :"Detroit Lions","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/8"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/det/detroit-lions?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=8&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:8"},{"description" :"Nick Fairley","type" :"athlete","sportId"
+        :28,"athleteId" :13990,"athlete" :{"id" :13990,"description" :"Nick Fairley","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/13990"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/13990/nick-fairley?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=13990&ex_cid=espnapi_public"}}}}},{"description"
+        :"San Francisco 49ers","type" :"team","sportId" :28,"teamId" :25,"team" :{"id"
+        :25,"description" :"San Francisco 49ers","links" :{"api" :{"teams" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl/teams/25"}},"web" :{"teams" :{"href"
+        :"http://espn.go.com/nfl/team/_/name/sf/san-francisco-49ers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=25&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:25"},{"description" :"Aldon Smith","type" :"athlete","sportId"
+        :28,"athleteId" :13988,"athlete" :{"id" :13988,"description" :"Aldon Smith","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/13988"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/13988/aldon-smith?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=13988&ex_cid=espnapi_public"}}}}}],"published"
+        :"2014-04-18T00:51:01Z","video" :[]},{"headline" :"Shawne Merriman joins WWE","keywords"
+        :["Lights Out","WWE"],"lastModified" :"2014-04-12T14:13:28Z","premium" :false,"mobileStory"
+        :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10771868"}},"web"
+        :{"href" :"http://espn.go.com/nfl/story/_/id/10771868/shawne-merriman-former-member-san-diego-chargers-buffalo-bills-joins-wwe?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10771868&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Career change: Ex-NFL star Merriman to WWE","type" :"HeadlineNews","related"
+        :[],"id" :10771868,"story" :"","title" :"Shawne Merriman, former member of
+        San Diego Chargers and Buffalo Bills, joins WWE","linkText" :"Career change:
+        Ex-NFL star Merriman to WWE\n","source" :"ESPN.com news services","description"
+        :"Shawne Merriman is going from the football field to the wrestling ring.","images"
+        :[{"height" :324,"alt" :"Shawne Merriman","width" :576,"name" :"Merriman_Shawne
+        130911 [576x324]","type" :"inline","credit" :"Rob Tringali/Sportschrome/Getty
+        Images","url" :"http://a.espncdn.com/photo/2013/0911/grant_g_merriman_kh_576.jpg"}],"categories"
+        :[{"description" :"NFL","type" :"league","sportId" :28,"leagueId" :28,"league"
+        :{"id" :28,"description" :"NFL","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/football/nfl"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nfl/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nfl/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28"},{"description" :"San Diego Chargers","type" :"team","sportId"
+        :28,"teamId" :24,"team" :{"id" :24,"description" :"San Diego Chargers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/24"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=24&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:24"},{"description" :"Buffalo Bills","type" :"team","sportId"
+        :28,"teamId" :2,"team" :{"id" :2,"description" :"Buffalo Bills","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/2"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/buf/buffalo-bills?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=2&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:2"}],"published" :"2014-04-12T13:37:20Z","video" :[]},{"headline"
+        :"Chargers, city to start stadium talks","keywords" :["Stadium","Qualcomm
+        Stadium","Kevin Faulconer"],"lastModified" :"2014-03-28T19:39:24Z","premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10688404"}},"web"
+        :{"href" :"http://espn.go.com/nfl/story/_/id/10688404/san-diego-chargers-begin-talks-new-stadium?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10688404&ex_cid=espnapi_public"}},"type"
+        :"HeadlineNews","related" :[],"id" :10688404,"story" :"","title" :"San Diego
+        Chargers begin talks for new stadium","linkText" :"Chargers, city to discuss
+        stadium proposal","byline" :"Eric D. Williams","source" :"ESPN.com","description"
+        :" Newly elected San Diego mayor Kevin Faulconer and the San Diego Chargers
+        have started the process of establishing a dialogue that both sides hope will
+        ultimately lead to a new stadium project that keeps the team in the city.","images"
+        :[{"height" :200,"alt" :"Qualcomm Stadium parking lot","width" :300,"name"
+        :"Qualcomm Stadium (parking lot) 131110 [300x200] - Copy","caption" :"The
+        Chargers have long sought a new home to replace Qualcomm Stadium, which was
+        built in 1967.","type" :"inline","credit" :"AP Photo/Ric Tapia","url" :"http://a.espncdn.com/photo/2013/1110/nfl_a_qualcomm_stadium_lot_b1_300x200.jpg"}],"categories"
+        :[{"description" :"San Diego Chargers","type" :"team","sportId" :28,"teamId"
+        :24,"team" :{"id" :24,"description" :"San Diego Chargers","links" :{"api"
+        :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/24"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=24&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:24"},{"description" :"NFL","type" :"league","sportId" :28,"leagueId"
+        :28,"league" :{"id" :28,"description" :"NFL","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/nfl/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/nfl/?ex_cid=espnapi_public"}}}},"uid" :"s:20~l:28"}],"published"
+        :"2014-03-28T15:56:18Z","video" :[]},{"headline" :"Richard Marshall back to
+        Chargers","keywords" :["Cornerback","AFC West","Mike McCoy"],"lastModified"
+        :"2014-03-15T05:08:43Z","premium" :false,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10606369"}},"web" :{"href"
+        :"http://espn.go.com/nfl/story/_/id/10606369/richard-marshall-returning-san-diego-chargers?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10606369&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Marshall back to Chargers on 1-year deal","type" :"HeadlineNews","related"
+        :[],"id" :10606369,"story" :"","title" :"Richard Marshall returning to San
+        Diego Chargers","linkText" :"Marshall back to Chargers on 1-year deal","byline"
+        :"Eric D. Williams","source" :"ESPN.com","description" :"The San Diego Chargers
+        continued to fortify their depth in the secondary, agreeing to terms with
+        cornerback Richard Marshall on a one-year deal Friday, the team announced.","images"
+        :[],"categories" :[{"description" :"NFL","type" :"league","sportId" :28,"leagueId"
+        :28,"league" :{"id" :28,"description" :"NFL","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/nfl/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/nfl/?ex_cid=espnapi_public"}}}},"uid" :"s:20~l:28"},{"description"
+        :"San Diego Chargers","type" :"fantasyTeam","sportId" :3080,"fantasyTeamId"
+        :24},{"description" :"Richard Marshall","type" :"athlete","sportId" :28,"athleteId"
+        :9644,"athlete" :{"id" :9644,"description" :"Richard Marshall","links" :{"api"
+        :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/9644"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/9644/richard-marshall?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=9644&ex_cid=espnapi_public"}}}}},{"type"
+        :"topic","sportId" :0,"topicId" :52}],"published" :"2014-03-14T13:32:52Z","video"
+        :[]},{"headline" :"Chargers sign QB Kellen Clemens","keywords" :["free agent","quarterback","afc
+        west"],"lastModified" :"2014-03-14T01:26:32Z","premium" :false,"mobileStory"
+        :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10603930"}},"web"
+        :{"href" :"http://espn.go.com/nfl/story/_/id/10603930/san-diego-chargers-agree-2-year-deal-qb-kellen-clemens?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10603930&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Chargers sign ex-Rams QB Clemens","type" :"HeadlineNews","related" :[{"id"
+        :10603959,"title" :"Wagoner: Rams should have kept Clemens","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10603959"}},"web" :{"href"
+        :"http://espn.go.com/blog/st-louis-rams/post/_/id/6744/rams-shouldve-kept-clemens?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10603959&ex_cid=espnapi_public"}}}],"id"
+        :10603930,"story" :"","title" :"San Diego Chargers agree to 2-year deal with
+        QB Kellen Clemens","linkText" :"Chargers sign ex-Rams quarterback Clemens","byline"
+        :"Eric D. Williams","source" :"ESPN.com","description" :"The San Diego Chargers
+        agreeing to terms on a two-year deal with Kellen Clemens, the team announced
+        this afternoon.","images" :[],"categories" :[{"description" :"NFL","type"
+        :"league","sportId" :28,"leagueId" :28,"league" :{"id" :28,"description" :"NFL","links"
+        :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/football/nfl"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nfl/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nfl/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28"},{"description" :"San Diego Chargers","type" :"team","sportId"
+        :28,"teamId" :24,"team" :{"id" :24,"description" :"San Diego Chargers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/24"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=24&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:24"},{"description" :"Kellen Clemens","type" :"athlete","sportId"
+        :28,"athleteId" :9635,"athlete" :{"id" :9635,"description" :"Kellen Clemens","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/9635"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/9635/kellen-clemens?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=9635&ex_cid=espnapi_public"}}}}},{"type"
+        :"topic","sportId" :0,"topicId" :52}],"published" :"2014-03-13T23:40:17Z","video"
+        :[]},{"headline" :"Chargers agree with Donald Brown","keywords" :["roster
+        moves","signings","offseason","free agency","running back"],"lastModified"
+        :"2014-03-12T15:13:25Z","premium" :false,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10593015"}},"web" :{"href"
+        :"http://espn.go.com/nfl/story/_/id/10593015/san-diego-chargers-agree-donald-brown?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10593015&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Chargers add Brown to backfield","type" :"HeadlineNews","related" :[{"id"
+        :10593818,"title" :"More from ESPN.com","links" :{"api" :{"news" :{"href"
+        :"http://api.espn.com/v1/sports/news/10593818"}},"web" :{"href" :"http://espn.go.com/blog/san-diego-chargers/post/_/id/4017/morning-links-what-brown-can-do-for-bolts?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10593818&ex_cid=espnapi_public"}}}],"id"
+        :10593015,"story" :"","title" :"San Diego Chargers agree with Donald Brown","linkText"
+        :"Chargers add ex-Colts RB Brown to backfield","byline" :"Eric D. Williams","source"
+        :"ESPN.com","description" :"Looking for a running back to complement every-down
+        back Ryan Mathews, the San Diego Chargers appear to have found their match
+        in Indianapolis Colts free agent Donald Brown.","images" :[],"categories"
+        :[{"description" :"NFL","type" :"league","sportId" :28,"leagueId" :28,"league"
+        :{"id" :28,"description" :"NFL","links" :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/football/nfl"}},"web"
+        :{"leagues" :{"href" :"http://espn.go.com/nfl/?ex_cid=espnapi_public"}},"mobile"
+        :{"leagues" :{"href" :"http://m.espn.go.com/nfl/?ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28"},{"description" :"Indianapolis Colts","type" :"team","sportId"
+        :28,"teamId" :11,"team" :{"id" :11,"description" :"Indianapolis Colts","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/11"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/ind/indianapolis-colts?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=11&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:11"},{"description" :"San Diego Chargers","type" :"team","sportId"
+        :28,"teamId" :24,"team" :{"id" :24,"description" :"San Diego Chargers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/24"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=24&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:24"},{"description" :"Donald Brown","type" :"athlete","sportId"
+        :28,"athleteId" :12489,"athlete" :{"id" :12489,"description" :"Donald Brown","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/12489"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/12489/donald-brown?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=12489&ex_cid=espnapi_public"}}}}},{"type"
+        :"topic","sportId" :0,"topicId" :52}],"published" :"2014-03-12T03:41:03Z","video"
+        :[]},{"headline" :"Chargers re-sign OL Chad Rinehart","keywords" :["O-line","offensive
+        line","Tom Telesco","free agent","NFL free agency","Bolts"],"lastModified"
+        :"2014-03-10T21:47:54Z","premium" :false,"mobileStory" :"","links" :{"api"
+        :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10583134"}},"web" :{"href"
+        :"http://espn.go.com/nfl/story/_/id/10583134/chad-rinehart-agrees-2-year-deal-return-san-diego-chargers?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10583134&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Chargers re-sign OL Rinehart to 2-year deal","type" :"HeadlineNews","related"
+        :[],"id" :10583134,"story" :"","title" :"Chad Rinehart agrees to 2-year deal
+        to return to San Diego Chargers","linkText" :"Chargers re-sign OL Rinehart
+        to 2-year deal","byline" :"Eric D. Williams","source" :"ESPN.com","description"
+        :"San Diego Chargers general manager Tom Telesco continued his effort to keep
+        impact players from the team''s 2013 postseason run on the current roster,
+        agreeing to terms on a two-year deal with offensive lineman Chad Rinehart.","images"
+        :[],"categories" :[{"description" :"San Diego Chargers","type" :"team","sportId"
+        :28,"teamId" :24,"team" :{"id" :24,"description" :"San Diego Chargers","links"
+        :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/24"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=24&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:24"},{"description" :"NFL","type" :"league","sportId" :28,"leagueId"
+        :28,"league" :{"id" :28,"description" :"NFL","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/nfl/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/nfl/?ex_cid=espnapi_public"}}}},"uid" :"s:20~l:28"},{"description"
+        :"Chad Rinehart","type" :"athlete","sportId" :28,"athleteId" :11330,"athlete"
+        :{"id" :11330,"description" :"Chad Rinehart","links" :{"api" :{"athletes"
+        :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/11330"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/11330/chad-rinehart?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=11330&ex_cid=espnapi_public"}}}}},{"type"
+        :"topic","sportId" :0,"topicId" :52}],"published" :"2014-03-10T17:09:44Z","video"
+        :[]},{"headline" :"Hakeem Nicks set for free agency","keywords" :["free agency","NFL
+        free agency","wide receiver","WR"],"lastModified" :"2014-03-09T20:43:56Z","premium"
+        :false,"mobileStory" :"","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10578697"}},"web"
+        :{"href" :"http://espn.go.com/new-york/nfl/story/_/id/10578697/hakeem-nicks-new-york-giants-set-free-agency-says-missing-link?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10578697&ex_cid=espnapi_public"}},"shortLinkText"
+        :"Free agent WR Nicks: I can be ''missing link'' ","type" :"HeadlineNews","related"
+        :[{"id" :10574029,"title" :"Hakeem Nicks sends out letters from doctors clearing
+        him for 2014","links" :{"api" :{"news" :{"href" :"http://api.espn.com/v1/sports/news/10574029"}},"web"
+        :{"href" :"http://espn.go.com/new-york/nfl/story/_/id/10574029/hakeem-nicks-sends-letters-doctors-clearing-2014?ex_cid=espnapi_public"},"mobile"
+        :{"href" :"http://m.espn.go.com/nfl/story?storyId=10574029&ex_cid=espnapi_public"}}}],"id"
+        :10578697,"story" :"","title" :"Hakeem Nicks of New York Giants set for free
+        agency, says he can be ''missing link''","linkText" :"Free agent WR Nicks:
+        I can be ''missing link''","source" :"ESPN.com news services","description"
+        :"Hakeem Nicks emphasized Sunday that he wants a long-term contract as a free
+        agent, claiming he can be a \"missing link\" to a team with championship aspirations.","images"
+        :[{"height" :200,"alt" :"Bradley Fletcher","width" :300,"name" :"Fletcher_Bradley
+        131006 [300x200]","caption" :"Hakeem Nicks said ''there are a number of teams
+        that I have my eye on'' once he becomes an unrestricted free agent Tuesday.","type"
+        :"inline","credit" :"AP Photo/Bill Kostroun","url" :"http://a.espncdn.com/photo/2013/1006/ny_a_fletcher_b1_300x200.jpg"}],"categories"
+        :[{"description" :"Hakeem Nicks","type" :"athlete","sportId" :28,"athleteId"
+        :12586,"athlete" :{"id" :12586,"description" :"Hakeem Nicks","links" :{"api"
+        :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/12586"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/12586/hakeem-nicks?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=12586&ex_cid=espnapi_public"}}}}},{"description"
+        :"New York Giants","type" :"team","sportId" :28,"teamId" :19,"team" :{"id"
+        :19,"description" :"New York Giants","links" :{"api" :{"teams" :{"href" :"http://api.espn.com/v1/sports/football/nfl/teams/19"}},"web"
+        :{"teams" :{"href" :"http://espn.go.com/nfl/team/_/name/nyg/new-york-giants?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=19&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:19"},{"description" :"NFL","type" :"league","sportId" :28,"leagueId"
+        :28,"league" :{"id" :28,"description" :"NFL","links" :{"api" :{"leagues" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl"}},"web" :{"leagues" :{"href"
+        :"http://espn.go.com/nfl/?ex_cid=espnapi_public"}},"mobile" :{"leagues" :{"href"
+        :"http://m.espn.go.com/nfl/?ex_cid=espnapi_public"}}}},"uid" :"s:20~l:28"},{"description"
+        :"Andrew Luck","type" :"athlete","sportId" :28,"athleteId" :14874,"athlete"
+        :{"id" :14874,"description" :"Andrew Luck","links" :{"api" :{"athletes" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl/athletes/14874"}},"web" :{"athletes"
+        :{"href" :"http://espn.go.com/nfl/player/_/id/14874/andrew-luck?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=14874&ex_cid=espnapi_public"}}}}},{"description"
+        :"Indianapolis Colts","type" :"team","sportId" :28,"teamId" :11,"team" :{"id"
+        :11,"description" :"Indianapolis Colts","links" :{"api" :{"teams" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl/teams/11"}},"web" :{"teams" :{"href"
+        :"http://espn.go.com/nfl/team/_/name/ind/indianapolis-colts?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=11&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:11"},{"description" :"Cam Newton","type" :"athlete","sportId"
+        :28,"athleteId" :13994,"athlete" :{"id" :13994,"description" :"Cam Newton","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/13994"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/13994/cam-newton?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=13994&ex_cid=espnapi_public"}}}}},{"description"
+        :"Carolina Panthers","type" :"team","sportId" :28,"teamId" :29,"team" :{"id"
+        :29,"description" :"Carolina Panthers","links" :{"api" :{"teams" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl/teams/29"}},"web" :{"teams" :{"href"
+        :"http://espn.go.com/nfl/team/_/name/car/carolina-panthers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=29&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:29"},{"description" :"Philip Rivers","type" :"athlete","sportId"
+        :28,"athleteId" :5529,"athlete" :{"id" :5529,"description" :"Philip Rivers","links"
+        :{"api" :{"athletes" :{"href" :"http://api.espn.com/v1/sports/football/nfl/athletes/5529"}},"web"
+        :{"athletes" :{"href" :"http://espn.go.com/nfl/player/_/id/5529/philip-rivers?ex_cid=espnapi_public"}},"mobile"
+        :{"athletes" :{"href" :"http://m.espn.go.com/nfl/playercard?playerId=5529&ex_cid=espnapi_public"}}}}},{"description"
+        :"San Diego Chargers","type" :"team","sportId" :28,"teamId" :24,"team" :{"id"
+        :24,"description" :"San Diego Chargers","links" :{"api" :{"teams" :{"href"
+        :"http://api.espn.com/v1/sports/football/nfl/teams/24"}},"web" :{"teams" :{"href"
+        :"http://espn.go.com/nfl/team/_/name/sd/san-diego-chargers?ex_cid=espnapi_public"}},"mobile"
+        :{"teams" :{"href" :"http://m.espn.go.com/nfl/clubhouse?teamId=24&ex_cid=espnapi_public"}}}},"uid"
+        :"s:20~l:28~t:24"}],"published" :"2014-03-09T19:34:21Z","video" :[]}]}'
+    http_version: 
+  recorded_at: Sun, 01 Jun 2014 03:13:26 GMT
+recorded_with: VCR 2.9.2

@@ -27,14 +27,14 @@ http_interactions:
       Cache-Control:
       - max-age=300
       Date:
-      - Sun, 01 Jun 2014 02:05:52 GMT
+      - Sun, 01 Jun 2014 03:09:04 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
       - '38410'
     body:
       encoding: UTF-8
-      string: '{"timestamp" :"2014-06-01T02:05:52Z","resultsOffset" :0,"status" :"success","resultsLimit"
+      string: '{"timestamp" :"2014-06-01T03:09:04Z","resultsOffset" :0,"status" :"success","resultsLimit"
         :10,"resultsCount" :451,"headlines" :[{"headline" :"Clips sale pending board
         approval","keywords" :["donald sterling","nba","adam silver","steve ballmer","clips","shelly
         sterling"],"lastModified" :"2014-05-31T06:33:42Z","premium" :false,"mobileStory"
@@ -437,5 +437,5 @@ http_interactions:
         :{"teams" :{"href" :"http://m.espn.go.com/nba/clubhouse?teamId=12&ex_cid=espnapi_public"}}}},"uid"
         :"s:40~l:46~t:12"}],"published" :"2014-05-29T18:59:44Z","video" :[]}]}'
     http_version: 
-  recorded_at: Sun, 01 Jun 2014 02:06:27 GMT
+  recorded_at: Sun, 01 Jun 2014 03:13:27 GMT
 recorded_with: VCR 2.9.2

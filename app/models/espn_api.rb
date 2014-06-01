@@ -12,6 +12,12 @@ class EspnApi
     parsed_response_body["headlines"]
   end
 
+  def chargers
+    response = Faraday.get("http://api.espn.com/v1/sports/football/nfl/teams/24/news?apikey=#{ENV['ESPN_API_KEY']}")
+    parsed_response_body = parse_json(response.body)
+    parsed_response_body["headlines"]
+  end
+
   private
 
   def parse_json(response_body)

@@ -27,14 +27,14 @@ http_interactions:
       Cache-Control:
       - max-age=300
       Date:
-      - Sun, 01 Jun 2014 01:26:44 GMT
+      - Sun, 01 Jun 2014 03:09:04 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '28253'
+      - '28257'
     body:
       encoding: UTF-8
-      string: '{"timestamp" :"2014-06-01T01:26:44Z","resultsOffset" :0,"status" :"success","resultsLimit"
+      string: '{"timestamp" :"2014-06-01T03:09:04Z","resultsOffset" :0,"status" :"success","resultsLimit"
         :10,"resultsCount" :379,"headlines" :[{"headline" :"Martinez, Cabrera lead
         Detroit past Seattle 6-3","keywords" :[],"lastModified" :"2014-05-31T06:37:08Z","premium"
         :false,"gameId" :"340530112","mobileStory" :"","links" :{"api" :{"news" :{"href"
@@ -74,14 +74,14 @@ http_interactions:
         Cabrera and Victor Martinez both homered in the Tigers'' 6-3 win over the
         Mariners.","links" :{"web" :{"href" :"http://espn.go.com/video/clip?id=11011169&ex_cid=espnapi_public"}}}]},{"headline"
         :"Robinson Cano sits with sore hand","keywords" :["hand","sore","day to day","m''s"],"lastModified"
-        :"2014-05-31T14:09:49Z","premium" :false,"mobileStory" :"","links" :{"api"
+        :"2014-06-01T02:42:55Z","premium" :false,"mobileStory" :"","links" :{"api"
         :{"news" :{"href" :"http://api.espn.com/v1/sports/news/11009646"}},"web" :{"href"
         :"http://espn.go.com/mlb/story/_/id/11009646/robinson-cano-seattle-mariners-day-day-sore-hand?ex_cid=espnapi_public"},"mobile"
         :{"href" :"http://m.espn.go.com/mlb/story?storyId=11009646&ex_cid=espnapi_public"}},"type"
         :"HeadlineNews","related" :[],"id" :11009646,"story" :"","title" :"Robinson
-        Cano of Seattle Mariners day to day with sore hand","linkText" :"Cano out
-        of M''s lineup again with sore hand","source" :"Associated Press","description"
-        :"Robinson Cano is out of his second straight game for the Seattle Mariners
+        Cano of Seattle Mariners day to day with sore hand","linkText" :"Cano to miss
+        third straight with sore hand","source" :"ESPN.com news services","description"
+        :"Robinson Cano is out of his third straight game for the Seattle Mariners
         with a hand contusion.","images" :[],"categories" :[{"description" :"MLB","type"
         :"league","sportId" :10,"leagueId" :10,"league" :{"id" :10,"description" :"MLB","links"
         :{"api" :{"leagues" :{"href" :"http://api.espn.com/v1/sports/baseball/mlb"}},"web"
@@ -342,5 +342,5 @@ http_interactions:
         :{"athletes" :{"href" :"http://m.espn.go.com/mlb/playercard?playerId=31767&ex_cid=espnapi_public"}}}}}],"published"
         :"2014-05-23T23:12:22Z","video" :[]}]}'
     http_version: 
-  recorded_at: Sun, 01 Jun 2014 01:30:53 GMT
+  recorded_at: Sun, 01 Jun 2014 03:13:27 GMT
 recorded_with: VCR 2.9.2
