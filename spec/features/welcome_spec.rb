@@ -2,6 +2,16 @@ require 'spec_helper'
 
 feature 'visiting the homepage' do
 
+  before do
+    VCR.use_cassette('features/registration') do
+      visit '/'
+      fill_in 'user[email]', :with => 'nate@example.com'
+      fill_in 'user[password]', :with => 'password'
+      click_button 'Register'
+      expect(page).to have_content 'Welcome, nate@example.com'
+    end
+  end
+
   scenario 'displays mariners headlines on homepage' do
     VCR.use_cassette('features/mariners_news') do
       visit '/'
@@ -23,4 +33,5 @@ feature 'visiting the homepage' do
       expect(page).to have_content 'Shawne Merriman joins WWE'
     end
   end
+
 end

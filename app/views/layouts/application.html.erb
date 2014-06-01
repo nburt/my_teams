@@ -10,7 +10,10 @@
 <header>
   <nav>
     <ul>
-      <li>My Teams</li>
+      <li id="site_name">My Teams</li>
+      <% if current_user %>
+        <li>Welcome, <%= current_user.email %></li>
+      <% end %>
     </ul>
   </nav>
 </header>

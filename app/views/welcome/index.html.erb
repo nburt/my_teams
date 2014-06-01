@@ -1,11 +1,21 @@
-<% @all_news.each do |article| %>
-  <article>
-    <ul>
-      <li><%= article[:headline] %></li>
-      <div class="article_time">
-        <li><%= time_ago_in_words(article[:last_modified]) %> ago</li>
-      </div>
-    </ul>
-    <%= link_to "Read on ESPN", article[:url], :target => "_blank" %>
-  </article>
+<% if @all_news != nil %>
+  <% @all_news.each do |article| %>
+    <article>
+      <ul>
+        <li><%= article[:headline] %></li>
+        <div class="article_time">
+          <li><%= time_ago_in_words(article[:last_modified]) %> ago</li>
+        </div>
+      </ul>
+      <%= link_to "Read on ESPN", article[:url], :target => "_blank" %>
+    </article>
+  <% end %>
+<% else %>
+  <%= form_for @user, :url => {:controller => "registrations", :action => "create"} do |f| %>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+    <%= f.submit "Register" %>
+    <% end %>
 <% end %>
