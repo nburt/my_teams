@@ -10,6 +10,16 @@ class TeamsController < ApplicationController
     redirect_to root_path
   end
 
+  def edit
+    @user = User.find(params[:id])
+  end
+
+  def update
+    @user = User.find(params[:id])
+    @user.update(:baseball => baseball_params(params), :basketball => basketball_params(params),:football => football_params(params))
+    redirect_to root_path
+  end
+
   private
 
   def baseball_params(params)

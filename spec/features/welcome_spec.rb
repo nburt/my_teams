@@ -79,4 +79,25 @@ feature 'visiting the homepage' do
     end
   end
 
+  scenario 'a user can edit the teams that they have added' do
+    VCR.use_cassette('features/editing_teams') do
+      within 'header' do
+        click_link 'Add Teams'
+      end
+      within '#football_container' do
+        check 'football[24]'
+      end
+      click_button 'Add Teams'
+
+      within 'header' do
+        expect(page).to_not have_content 'Add Teams'
+        click_link 'Update Teams'
+      end
+      check 'baseball[18]'
+      click_button 'Update Teams'
+      expect(page).to have_content 'Dwight Freeney says he\'s 100 percent'
+      expect(page).to have_content 'Escobar has 2 RBIs; Rays top Astros 5-2'
+    end
+  end
+
 end

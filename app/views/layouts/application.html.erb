@@ -14,7 +14,11 @@
       <div id="right_side_nav">
         <% if current_user %>
           <li><%= link_to "Logout", "/destroy" %></li>
-          <li><%= link_to "Add Teams", "/teams/new" %></li>
+          <% if current_user.have_team? %>
+            <li><%= link_to "Update Teams", edit_team_path(current_user) %></li>
+          <% else %>
+            <li><%= link_to "Add Teams", new_team_path %></li>
+          <% end %>
           <li>Welcome, <%= current_user.email %></li>
         <% else %>
           <li><%= link_to "Login", "/login" %></li>
